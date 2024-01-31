@@ -1,0 +1,491 @@
+@media screen and (max-width: 575px) {
+  body {
+    width: 100%;
+    font-size: 5px;
+  }
+
+  header {
+    height: 7vh;
+  }
+
+  .menu {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    z-index: 100;
+    background-color: rgba(0, 0, 0, 0.9);
+    transition: all 0.2s ease-in-out;
+  }
+
+  .open-menu,
+  .close-menu {
+    display: block;
+  }
+
+  #check:checked~.menu {
+    right: 0;
+  }
+
+  .button {
+    font-size: 20px;
+  }
+
+  #h1 h1 {
+    font-size: 75px;
+  }
+
+  #h2 h2 {
+    font-size: 25px;
+  }
+
+  #h3 h3 {
+    font-size: 15px;
+  }
+
+  .we {
+    height: 83%;
+  }
+
+  .carousel .card h2 {
+    font-size: 40px;
+  }
+
+  .carousel .card span {
+    font-size: 25px;
+  }
+
+
+  #second_page_overlay h3 {
+    font-size: 3.5em;
+  }
+
+
+  .card .img img {
+    width: 250px;
+    height: 250px;
+  }
+
+  .wrapper .carousel {
+    grid-auto-columns: 100%;
+  }
+
+
+  #third_page_heading {
+    font-size: 67.5px;
+    padding-left: 5vh;
+  }
+
+
+  #fifth_page_heading {
+    padding-left: 5vh;
+    font-size: 40px;
+  }
+
+
+  #sixth_page_text {
+    font-size: 3em;
+    width: 70%;
+  }
+
+
+  #seventh_page {
+    height: 100vh;
+    min-height: 100vh;
+  }
+
+  #seventh_page_heading {
+    padding-left: 5vh;
+    font-size: 67.5px;
+  }
+
+  .we_7 {
+    height: 70%;
+  }
+
+  .card_7 .img_7 img {
+    max-width: 300px;
+    max-height: 600px;
+    object-fit: cover;
+    background-position: 50% 50%;
+  }
+
+  .wrapper_7 .carousel_7 {
+    grid-auto-columns: 100%;
+  }
+
+  .wrapper_7 i:first-child {
+    left: 0px;
+  }
+
+  .wrapper_7 i:last-child {
+    right: 0px;
+  }
+
+
+  #eighth_page_heading {
+    padding-left: 5vh;
+    font-size: 67.5px;
+  }
+
+
+  .card_8 .img_8 img {
+    width: 300px;
+    height: auto;
+  }
+
+  .wrapper_8 .carousel_8 {
+    grid-auto-columns: 100%;
+  }
+
+  .we_8 {
+    height: 80%;
+  }
+
+  .wrapper_8 i:first-child {
+    left: 0px;
+  }
+
+  .wrapper_8 i:last-child {
+    right: 0px;
+  }
+
+
+  #nineth_page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #nineth_page_heading {
+    display: inline-block;
+    font-size: 67.5px;
+  }
+
+  #nineth_page_content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0px;
+  }
+
+  #contacts {
+    font-size: 4.8em;
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  .button {
+    font-size: 20px;
+  }
+
+
+  .menu {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    z-index: 100;
+    background-color: rgba(0, 0, 0, 0.9);
+    transition: all 0.2s ease-in-out;
+  }
+
+  .open-menu,
+  .close-menu {
+    display: block;
+  }
+
+  #check:checked~.menu {
+    right: 0;
+  }
+
+
+  #h1 h1 {
+    font-size: 65px;
+  }
+
+  #h2andh3 {
+    height: 45%;
+  }
+
+  #h2 h2 {
+    font-size: 25px;
+  }
+
+  #second_page_overlay h3 {
+    font-size: 20px;
+  }
+
+  #h3 h3 {
+    font-size: 15px;
+  }
+
+
+  #third_page_heading {
+    font-size: 65px;
+    padding-left: 5vh;
+  }
+
+  .we {
+    height: 70%;
+  }
+
+  .wrapper .carousel {
+    grid-auto-columns: calc((100% / 1) - 6px);
+  }
+
+  .carousel .card h2 {
+    width: calc(100% - 20px);
+    font-size: 1.9rem;
+  }
+
+  .carousel .card span {
+    font-size: 1.0rem;
+  }
+
+
+  #fifth_page_heading {
+    font-size: 55px;
+    padding-left: 5vh;
+  }
+
+
+  #sixth_page_text {
+    font-size: 20px;
+    width: 65%;
+  }
+
+
+  #seventh_page {
+    height: 100vh;
+    min-height: 100vh;
+  }
+
+
+  #seventh_page_heading {
+    font-size: 55px;
+    padding-left: 5vh;
+  }
+
+  .we_7 {
+    height: 70%;
+  }
+
+  .wrapper_7 .carousel_7 {
+    grid-auto-columns: 100%;
+  }
+
+  .card_7 .img_7 img {
+    max-width: 450px;
+    max-height: 600px;
+  }
+
+
+  #eighth_page_heading {
+    font-size: 55px;
+    padding-left: 5vh;
+  }
+
+  .we_8 {
+    height: 80%;
+  }
+
+  .wrapper_8 .carousel_8 {
+    grid-auto-columns: 100%;
+  }
+
+  .wrapper_8 i:first-child {
+    left: 0px;
+  }
+
+  .wrapper_8 i:last-child {
+    right: 0px;
+  }
+
+
+  #nineth_page {
+    align-items: center;
+  }
+
+  #nineth_page_content {
+    margin-right: 0px;
+  }
+
+  #nineth_page_heading {
+    font-size: 70px;
+  }
+
+  #contacts {
+    font-size: 25px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .button {
+    font-size: 15px;
+  }
+
+  #h1 h1 {
+    font-size: 80px;
+  }
+
+  #h2 h2 {
+    font-size: 35px;
+  }
+
+  #h3 h3 {
+    font-size: 25px;
+  }
+
+  #h2andh3 {
+    height: 44%;
+  }
+
+
+  #second_page_overlay h3 {
+    font-size: 25px;
+  }
+
+
+  #third_page_heading {
+    font-size: 72px;
+  }
+
+  .wrapper .carousel {
+    grid-auto-columns: calc((100% / 2) - 9px);
+  }
+
+  .we {
+    height: 80%;
+  }
+
+
+  #fifth_page_heading {
+    font-size: 70px;
+    padding-left: 5vh;
+  }
+
+  #sixth_page_text {
+    width: 70%;
+    font-size: 20px;
+  }
+
+
+  #seventh_page {
+    height: 100vh;
+    min-height: 100vh;
+  }
+
+  #seventh_page_heading {
+    font-size: 70px;
+    padding-left: 5vh;
+  }
+
+  .we_7 {
+    height: 70%;
+    margin: 0px;
+  }
+
+  .wrapper_7 .carousel_7 {
+    grid-auto-columns: calc((100% / 2) - 9px);
+  }
+
+  .card_7 .img_7 img {
+    max-width: 300px;
+    max-height: 600px;
+  }
+
+
+  .wrapper_8 .carousel_8 {
+    grid-auto-columns: 100%;
+  }
+
+
+  .card_8 .img_8 img {
+    max-width: 400px;
+    max-height: 600px;
+  }
+
+
+  #nineth_page {
+    justify-content: end;
+    align-items: center;
+  }
+
+  #nineth_page_heading {
+    font-size: 90px;
+  }
+
+  #contacts {
+    font-size: 25px;
+  }
+
+
+}
+
+@media screen and (min-width: 992px) and (max-width: 1119px) {
+  #h1 h1 {
+    font-size: 100px;
+  }
+
+  #h2 h2 {
+    font-size: 50px;
+  }
+
+  #h2andh3 {
+    height: 45%;
+  }
+
+  .we {
+    height: 73%;
+  }
+
+  .carousel .card {
+    height: auto;
+  }
+
+  .card .img img {
+    width: 200px;
+    height: 200px;
+    background-position: 50% 50%;
+  }
+
+  .carousel .card h2 {
+    font-size: 2.2rem;
+  }
+
+  .carousel .card span {
+    font-size: 1.2rem;
+  }
+
+
+  #fifth_page_heading {
+    font-size: 100px;
+    padding-left: 5vh;
+  }
+
+
+  #seventh_page {
+    height: 100vh;
+    min-height: 100vh;
+  }
+
+  .card_7 .img_7 img {
+    max-width: 400px;
+    max-height: 600px;
+  }
+
+
+  .wrapper_8 .carousel_8 {
+    grid-auto-columns: calc((100% / 2) - 9px);
+  }
+}
