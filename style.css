@@ -44,13 +44,6 @@ body{
   width: 100%;
 }
 
-:root {
-  --bg: #1F2022;
-  --main: #eee;
-  --second: #00adb5;
-  --light-text: #fff;
-}
-
 
 header{
   height: 4em;
@@ -75,7 +68,7 @@ header{
 
 }
 
-#nav_top{
+.nav_top{
   width: 100%;
 }
 
@@ -103,7 +96,7 @@ header{
   transition: 0.15s ease-in-out;
   position: relative;
   margin: 0 10px;
-  font-family: 'Hero-bold';
+  font-family: 'Hero-regular';
   height: 64px;
   display: flex;
   justify-content: center;
@@ -192,7 +185,7 @@ header{
 
 #first_page h2 {
   font-size: 4em;
-  font-family: 'Hero-regular';
+  font-family: 'Hero-light';
   color: white;
   line-height: 0.95;
   margin: 0px;
@@ -207,7 +200,7 @@ header{
 #first_page h3 {
   margin: 0px;
   color: white;
-  font-family: 'Hero-regular';
+  font-family: 'Hero-light';
   font-size: 32px;
   text-align: center;
 }
@@ -233,11 +226,11 @@ header{
 }
 
 .fa-arrow-down-long{
-  font-size: 50px;
+  font-size: 40px;
 }
 
 .scroll-down-text{
-  font-family: 'Hero-regular';
+  font-family: 'Hero-light';
   color: white;
   font-size: 20px;
   margin-bottom: 10px;
@@ -623,7 +616,7 @@ header{
   width: 100%;
   height: 100%;
   object-fit: cover;
-  fill: var(--light-text);
+  fill: white;
 }
 
 .btn-reset {

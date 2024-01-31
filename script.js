@@ -36,7 +36,7 @@ navLinks.forEach(function (link) {
 
 const swiper = new Swiper("#gallery", {
   loop: true,
-  slidesPerView: 1,
+  slidesPerView: 3,
   
 
   navigation: {
@@ -44,6 +44,19 @@ const swiper = new Swiper("#gallery", {
     nextEl: "#gallery-next"
   }
 });
+
+
+const gallery_swiper = new Swiper("#gallery_1", {
+  loop: true,
+  slidesPerView: 1,
+
+
+  navigation: {
+    prevEl: "#gallery-prev",
+    nextEl: "#gallery-next"
+  }
+});
+
 
 
 
