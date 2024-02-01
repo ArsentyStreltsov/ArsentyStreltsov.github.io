@@ -33,29 +33,67 @@ navLinks.forEach(function (link) {
 
 
 // gallery
-
-const swiper = new Swiper("#gallery", {
+const first_swiper = new Swiper("#first_swiper", {
   loop: true,
-  slidesPerView: 3,
-  
+  freeMode: true,
 
   navigation: {
-    prevEl: "#gallery-prev",
-    nextEl: "#gallery-next"
+    prevEl: "#first_swiper_prev",
+    nextEl: "#first_swiper_next"
+  },
+
+  breakpoints: {
+    1110: {
+      slidesPerView: 3,
+    },  
+    992: {
+      slidesPerView: 2,
+    },
+    600: {
+      slidesPerView: 1,
+    }
+
   }
 });
 
-
-const gallery_swiper = new Swiper("#gallery_1", {
+const second_and_third_swiper = new Swiper("#second_and_third_swiper", {
   loop: true,
+  freeMode: true,
+
   slidesPerView: 1,
 
 
   navigation: {
-    prevEl: "#gallery-prev",
-    nextEl: "#gallery-next"
+    prevEl: "#second_and_third_swiper_prev",
+    nextEl: "#second_and_third_swiper_next"
   }
 });
+
+
+const fourth_swiper = new Swiper("#fourth_swiper", {
+  loop: true,
+  freeMode: true,
+
+  navigation: {
+    prevEl: "#fourth_swiper_prev",
+    nextEl: "#fourth_swiper_next"
+  },
+
+  breakpoints: {
+    1110: {
+      slidesPerView: 3,
+    },
+    992: {
+      slidesPerView: 2,
+    },
+    600: {
+      slidesPerView: 1,
+    }
+
+  }
+});
+
+
 
 
 
