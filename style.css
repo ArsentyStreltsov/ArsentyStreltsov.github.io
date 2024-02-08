@@ -225,15 +225,13 @@ header{
   animation: bounce 2s infinite;
 }
 
-.fa-arrow-down-long{
-  font-size: 40px;
-}
+
 
 .scroll-down-text{
-  font-family: 'Hero-light';
+  font-family: 'Hero-regular';
   color: white;
-  font-size: 20px;
-  margin-bottom: 10px;
+  font-size: 25px;
+  margin-bottom: 7px;
 }
 
 @keyframes bounce {
@@ -286,8 +284,8 @@ header{
 }
 
 #third_page {
-  height: 1000px;
-  min-height: 1000px;
+  height: 100vh;
+  min-height: 100vh;
   background-image: url('media/other_media/Pages/Page_3_BG.png');
   background-position: 50% 50%;
   background-size: cover;
@@ -323,7 +321,10 @@ header{
 
 #fourth_page {
   height: 100vh;
-  background-color: lightsalmon;
+  background-image: url('media/other_media/Pages/Page_7_BG.png');
+  background-position: 50% 50%;
+  background-size: cover;
+  position: relative;
 
 }
 
@@ -333,6 +334,16 @@ header{
   margin: 0px;
   padding: 10vh 0vh 0vh 10vh;
   color: white;
+}
+
+#call-form {
+  font-family: "Hero-regular";
+  font-size: 2em;
+}
+
+#call-form-2 {
+  font-family: "Hero-regular";
+  font-size: 2em;
 }
 
 .our_shows {
@@ -471,7 +482,8 @@ header{
 }
 
 .modal_info{
-  width: 45%;
+  width: 47%;
+  margin-left: 10px;
 }
 
 .modal__title {
@@ -481,10 +493,18 @@ header{
   font-family: "Hero-regular";
 }
 
+h2.modal__title{
+  font-size: 2.5em;
+}
+
 .modal_text {
   font-family: "Hero-regular";
   width: 100%;
   margin-bottom: 20px;
+}
+
+p.modal_text{
+  font-size: 18px;
 }
 
 .modal_gallery_all{
@@ -511,24 +531,115 @@ header{
   visibility: visible;
 }
 
+.buy_ticket{
+  font-family: "Hero-regular";
+  border-radius: 5px;
+  border: 1px solid black;
+  padding: 7px;
+  text-decoration: none;
+  color: black;
+}
 
 
 #fifth_page {
   height: 100vh;
   width: 100%;
-  background-image: url('media/other_media/Pages/Page_5_BG.png');
+  background-image: url('media/other_media/Pages/Page_6_BG.png');
   background-position: 50% 50%;
   background-size: cover;
   position: relative;
 }
 
-#fifth_page_heading {
+.fifth_page_heading {
   font-family: 'Mak-bold';
   font-size: 7em;
   color: white;
-  margin: 0px;
+  margin: 0px 0px 50px 0px;
+
   padding: 10vh 0px 0px 10vh;
+
 }
+
+.afisha{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.afisha_text{
+  color: white;
+  font-family: "Hero-regular";
+}
+
+.afisha-event {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  border-bottom: 1px solid #6c879d;
+  /* Цвет линии */
+  padding: 10px 20px;
+  width: 80%;
+}
+
+.afisha-date {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.afisha-day {
+  font-size: 36px;
+  line-height: 1;
+}
+
+.afisha-month {
+  font-size: 18px;
+}
+
+.afisha-info {
+  flex-grow: 1;
+  padding-left: 30px;
+}
+
+.afisha-title {
+  font-size: 24px;
+  margin: 0;
+  padding: 0;
+}
+
+.afisha-time {
+  font-size: 18px;
+}
+
+.afisha-action {
+  margin-left: 20px;
+}
+
+.afisha_ticket{
+  color: white;
+  border: 1px solid white;
+}
+
+.afisha-buy-ticket {
+  text-decoration: none;
+  color: blue;
+  /* Цвет текста кнопки */
+  padding: 5px 10px;
+  border: 1px solid blue;
+  /* Цвет границы кнопки */
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.afisha-buy-ticket:hover {
+  background-color: blue;
+  /* Цвет фона при наведении */
+  color: #004040;
+  /* Цвет текста при наведении */
+}
+
 
 #sixth_page {
   height: 100vh;

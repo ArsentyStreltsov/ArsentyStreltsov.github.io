@@ -1,3 +1,4 @@
+// burger menu
 document.addEventListener('DOMContentLoaded', function () {
   let headerHeight = document.querySelector('header').offsetHeight;
   
@@ -29,10 +30,7 @@ navLinks.forEach(function (link) {
 });
 
 
-
-
-
-// gallery
+// gallerys
 const first_swiper = new Swiper("#first_swiper", {
   loop: true,
   freeMode: true,
@@ -56,7 +54,7 @@ const first_swiper = new Swiper("#first_swiper", {
   }
 });
 
-const second_and_third_swiper = new Swiper("#second_and_third_swiper", {
+const second_swiper = new Swiper("#second_swiper", {
   loop: true,
   freeMode: true,
 
@@ -64,8 +62,23 @@ const second_and_third_swiper = new Swiper("#second_and_third_swiper", {
 
 
   navigation: {
-    prevEl: "#second_and_third_swiper_prev",
-    nextEl: "#second_and_third_swiper_next"
+    prevEl: "#second_swiper_prev",
+    nextEl: "#second_swiper_next",
+
+
+  }
+});
+
+const third_swiper = new Swiper("#third_swiper", {
+  loop: true,
+  freeMode: true,
+
+  slidesPerView: 1,
+
+
+  navigation: {
+    prevEl: "#third_swiper_prev",
+    nextEl: "#third_swiper_next"
   }
 });
 
@@ -92,10 +105,6 @@ const fourth_swiper = new Swiper("#fourth_swiper", {
 
   }
 });
-
-
-
-
 
 
 // Модальное окно
@@ -125,26 +134,26 @@ window.addEventListener("keydown", function (event) {
 
 
 // Модальное окно #2
-const callFromBtn_2 = document.getElementById("call-form_2")
-const modalCallForm_2 = document.getElementById("modal-call-form_2")
+const callFromBtn2 = document.getElementById("call-form-2")
+const modalCallForm2 = document.getElementById("modal-call-form-2")
 
 // Открытие модального окна
-callFromBtn_2.addEventListener("click", function () {
-  modalCallForm_2.classList.add("modal-parent_2--open")
+callFromBtn2.addEventListener("click", function () {
+  modalCallForm2.classList.add("modal-parent--open")
 })
 
 // Закрытие модального окна
-modalCallForm_2.querySelector(".modal_2").addEventListener("click", function (event) {
+modalCallForm2.querySelector(".modal").addEventListener("click", function (event) {
   event._isClick = true
 })
-modalCallForm_2.addEventListener("click", function (event) {
+modalCallForm2.addEventListener("click", function (event) {
   if (event._isClick === true) return
-  modalCallForm_2.classList.remove("modal-parent_2--open")
+  modalCallForm2.classList.remove("modal-parent--open")
 })
 
 // Закрытие при нажатии на Esc
 window.addEventListener("keydown", function (event) {
   if (event.key === "Escape") {
-    modalCallForm_2.classList.remove("modal-parent_2--open")
+    modalCallForm2.classList.remove("modal-parent--open")
   }
 })
