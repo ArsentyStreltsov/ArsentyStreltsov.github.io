@@ -277,7 +277,7 @@ header{
 #second_page_overlay h3 {
   text-align: center;
   color: white;
-  font-family: 'Hero-regular';
+  font-family: 'Hero-light';
   font-size: 2em;
   line-height: 1.2;
   padding: 20px;
@@ -586,7 +586,7 @@ p.modal_text{
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-right: 20px;
+  width: 90px;
 }
 
 .afisha-day {
@@ -607,6 +607,7 @@ p.modal_text{
   font-size: 24px;
   margin: 0;
   padding: 0;
+  text-decoration: none;
 }
 
 .afisha-time {
