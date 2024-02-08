@@ -587,9 +587,14 @@ p.modal_text{
   font-family: "Hero-regular";
 }
 
+.afisha_description{
+  display: flex;
+  flex-direction: row;
+}
+
 .afisha-event {
   display: flex;
-  justify-content: start;
+  justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid #6c879d;
   /* Цвет линии */
