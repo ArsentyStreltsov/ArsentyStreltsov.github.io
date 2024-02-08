@@ -35,56 +35,195 @@
     font-size: 20px;
   }
 
-  #h1 h1 {
-    font-size: 75px;
+  #first_page{
+    align-items: center;
   }
 
-  #h2 h2 {
-    font-size: 25px;
+  .scroll-down-text {
+    font-size: 20px;
   }
 
-  #h3 h3 {
-    font-size: 15px;
+  .scroll-down-container{
+    right: 20px;
+    
   }
-
-  .we {
-    height: 83%;
-  }
-
-  .carousel .card h2 {
-    font-size: 40px;
-  }
-
-  .carousel .card span {
-    font-size: 25px;
-  }
-
 
   #second_page_overlay h3 {
     font-size: 3.5em;
   }
 
 
-  .card .img img {
+  #third_page_heading {
+    font-size: 50px;
+    padding-left: 5vh;
+    margin-bottom: 30px;
+  }
+
+
+
+  .img img{
+    width: 200px !important;
+    height: 200px !important;
+  }
+
+  .actors_cards h2{
+    font-size: 35px;
+  }
+
+  #fourth_page_heading {
+    font-size: 50px;
+    padding-left: 5vh;
+    margin-bottom: 30px;
+  }
+
+
+  #call-form {
+    width: 250px;
+    height: 240px;
+    font-size: 22px;
+  }
+
+  #call-form-2 {
+    width: 250px;
+    height: 240px;
+    font-size: 22px;
+  }
+
+  .theater{
+    height: 530px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .our_shows{
+    width: 100%;
+    height: 530px;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 20px;
+  }
+
+  .modal-parent{
+    height: 99%;
+  }
+
+  .modal-wrapper{
+    height: 99%;
+  }
+
+  .modal{
+    width: 85%;
+    height: 99%;
+    flex-direction: column;
+    align-items: center;
+    overflow: scroll;
+    margin: 0px;
+  }
+
+  .modal_info{
+    width: 90%;
+    text-align: center;
+    margin-left: 0px;
+    margin-bottom: 20px;
+  }
+
+  p.modal_text{
+    font-size: 14px;
+  }
+
+  h2.modal__title{
+    font-size: 25px;
+  }
+
+  .modal_gallery_all{
+    height: 150px;
+    margin-top: 30px;
+    width: 90%;
+    height: 90%;
+  }
+
+  .buy_ticket{
+    font-size: 13px;
+  }
+
+  .actor_card_image img{
     width: 250px;
     height: 250px;
+    max-height: 250px;
   }
 
-  .wrapper .carousel {
-    grid-auto-columns: 100%;
+  #fifth_page {
+    height: 165vh;
+    min-height: 1130px;
   }
 
-
-  #third_page_heading {
-    font-size: 67.5px;
+  .fifth_page_heading {
+    font-size: 50px;
     padding-left: 5vh;
+    margin-bottom: 30px;
   }
 
 
-  #fifth_page_heading {
-    padding-left: 5vh;
-    font-size: 40px;
+
+  .afisha-day.afisha_text{
+    height: auto;
+    font-size: 25px;
   }
+
+  .afisha_text{
+    font-size: 17px;
+  }
+
+  .afisha_ticket{
+    font-size: 15px;
+    border: 1px solid #6c879d;
+  }
+
+  .afisha-info{
+    text-align: center;
+  }
+
+  .afisha-date{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .afisha_description{
+    width: 250px;
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    border: 1px solid #6c879d;
+    margin-bottom: 20px;
+  }
+
+  .afisha-day{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+
+  .afisha-event{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 90%;
+    height: 200px;
+    border-bottom: 1.5px solid #6c879d;
+    padding: 10px 20px 40px 20px;
+    margin-top: 30px;
+  }
+
+
+
+
+
 
 
   #sixth_page_text {
@@ -103,55 +242,11 @@
     font-size: 67.5px;
   }
 
-  .we_7 {
-    height: 70%;
-  }
-
-  .card_7 .img_7 img {
-    max-width: 300px;
-    max-height: 600px;
-    object-fit: cover;
-    background-position: 50% 50%;
-  }
-
-  .wrapper_7 .carousel_7 {
-    grid-auto-columns: 100%;
-  }
-
-  .wrapper_7 i:first-child {
-    left: 0px;
-  }
-
-  .wrapper_7 i:last-child {
-    right: 0px;
-  }
-
 
   #eighth_page_heading {
+    font-size: 50px;
     padding-left: 5vh;
-    font-size: 67.5px;
-  }
-
-
-  .card_8 .img_8 img {
-    width: 300px;
-    height: auto;
-  }
-
-  .wrapper_8 .carousel_8 {
-    grid-auto-columns: 100%;
-  }
-
-  .we_8 {
-    height: 80%;
-  }
-
-  .wrapper_8 i:first-child {
-    left: 0px;
-  }
-
-  .wrapper_8 i:last-child {
-    right: 0px;
+    margin-bottom: 50px;
   }
 
 
@@ -163,7 +258,7 @@
 
   #nineth_page_heading {
     display: inline-block;
-    font-size: 67.5px;
+    font-size: 50px;
   }
 
   #nineth_page_content {
@@ -172,14 +267,28 @@
     justify-content: center;
     flex-direction: column;
     margin: 0px;
+    padding-right: 0px;
   }
 
   #contacts {
-    font-size: 4.8em;
+    font-size: 17px;
+  }
+
+  .fa-brands{
+    font-size: 45px;
+  }
+
+  .fourth_page_images{
+    width: 240px;
+    height: 240px;
   }
 }
 
 @media screen and (min-width: 576px) and (max-width: 767px) {
+  .scroll-down-text{
+    font-size: 20px;
+  }
+
   .button {
     font-size: 20px;
   }
@@ -231,31 +340,160 @@
 
 
   #third_page_heading {
-    font-size: 65px;
+    font-size: 70px;
     padding-left: 5vh;
+    margin-bottom: 40px;
   }
 
-  .we {
-    height: 70%;
-  }
-
-  .wrapper .carousel {
-    grid-auto-columns: calc((100% / 1) - 6px);
-  }
-
-  .carousel .card h2 {
-    width: calc(100% - 20px);
-    font-size: 1.9rem;
-  }
-
-  .carousel .card span {
-    font-size: 1.0rem;
-  }
-
-
-  #fifth_page_heading {
-    font-size: 55px;
+  #fourth_page_heading {
+    font-size: 70px;
     padding-left: 5vh;
+    margin-bottom: 40px;
+  }
+
+  #fifth_page{
+    height: 145vh;
+    min-height: 990px;
+  }
+
+
+  #call-form {
+    width: 200px;
+    height: 330px;
+    font-size: 20px;
+  }
+
+  #call-form-2 {
+    width: 200px;
+    height: 330px;
+    font-size: 20px;
+  }
+
+  .theater{
+    height: 428px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .our_shows{
+    width: 100%;
+    justify-content: space-evenly;
+    gap: 0px;
+  }
+
+  .modal-parent{
+    height: 99%;
+  }
+
+  .modal-wrapper{
+    height: 99%;
+  }
+
+  .modal{
+    width: 85%;
+    height: 99%;
+    flex-direction: column;
+    align-items: center;
+    overflow: scroll;
+    margin: 0px;
+  }
+
+  .modal_info{
+    width: 90%;
+    text-align: center;
+    margin-left: 0px;
+    margin-bottom: 20px;
+  }
+
+  p.modal_text{
+    font-size: 15px;
+  }
+
+  h2.modal__title{
+    font-size: 28px;
+  }
+
+  .modal_gallery_all{
+    margin-top: 30px;
+    width: 90%;
+    height: 90%;
+  }
+
+  .buy_ticket{
+    font-size: 13px;
+  }
+
+  #third_slider.swiper-slide{
+    width: 300px;
+    height: 300px;
+  }
+
+  .actor_card_image img{
+    width: 250px;
+    height: 250px;
+  }
+
+
+
+  .fifth_page_heading {
+    font-size: 70px;
+    padding-left: 5vh;
+    margin-bottom: 10px;
+  }
+
+  .afisha-day.afisha_text{
+    height: auto;
+    font-size: 25px;
+  }
+
+  .afisha_text{
+    font-size: 20px;
+  }
+
+  .afisha_ticket{
+    font-size: 15px;
+    border: 1px solid #6c879d;
+  }
+
+  .afisha-info{
+    text-align: center;
+  }
+
+  .afisha-date{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .afisha_description{
+    width: 450px;
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    border: 1px solid #6c879d;
+    margin-bottom: 20px;
+  }
+
+  .afisha-day{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+
+  .afisha-event{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 90%;
+    height: 160px;
+    border-bottom: 1.5px solid #6c879d;
+    padding: 10px 20px 40px 20px;
+    margin-top: 30px;
   }
 
 
@@ -276,39 +514,10 @@
     padding-left: 5vh;
   }
 
-  .we_7 {
-    height: 70%;
-  }
-
-  .wrapper_7 .carousel_7 {
-    grid-auto-columns: 100%;
-  }
-
-  .card_7 .img_7 img {
-    max-width: 450px;
-    max-height: 600px;
-  }
-
 
   #eighth_page_heading {
-    font-size: 55px;
+    font-size: 70px;
     padding-left: 5vh;
-  }
-
-  .we_8 {
-    height: 80%;
-  }
-
-  .wrapper_8 .carousel_8 {
-    grid-auto-columns: 100%;
-  }
-
-  .wrapper_8 i:first-child {
-    left: 0px;
-  }
-
-  .wrapper_8 i:last-child {
-    right: 0px;
   }
 
 
@@ -318,6 +527,7 @@
 
   #nineth_page_content {
     margin-right: 0px;
+    padding-right: 0px;
   }
 
   #nineth_page_heading {
@@ -357,21 +567,84 @@
 
 
   #third_page_heading {
-    font-size: 72px;
-  }
-
-  .wrapper .carousel {
-    grid-auto-columns: calc((100% / 2) - 9px);
-  }
-
-  .we {
-    height: 80%;
+    font-size: 90px;
   }
 
 
-  #fifth_page_heading {
-    font-size: 70px;
-    padding-left: 5vh;
+  #fourth_page{
+    height: 730px;
+    min-height: 730px;
+  }
+
+  #fourth_page_heading{
+    font-size: 90px;
+  }
+
+  #call-form {
+    width: 275px;
+    height: 400px;
+  }
+
+  #call-form-2 {
+    width: 275px;
+    height: 400px;
+  }
+
+  .theater{
+    height: 428px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .our_shows{
+    width: 100%;
+    justify-content: space-evenly;
+    gap: 0px;
+  }
+
+  .modal-parent{
+    height: 99%;
+  }
+
+  .modal-wrapper{
+    height: 99%;
+  }
+
+  .modal{
+    height: 99%;
+    flex-direction: column;
+    align-items: center;
+    overflow: scroll;
+    margin: 0px;
+  }
+
+  .modal_info{
+    width: 90%;
+    text-align: center;
+    margin-left: 0px;
+    margin-bottom: 20px;
+  }
+
+  p.modal_text{
+    font-size: 20px;
+  }
+
+  .modal_gallery_all{
+    margin-top: 30px;
+    width: 500px;
+    height: 500px;
+  }
+
+  #fifth_page{
+  height: 730px;
+  min-height: 730px;
+  }
+
+  .fifth_page_heading{
+    font-size: 90px;
+    padding-left: 10vh;
   }
 
   #sixth_page_text {
@@ -381,8 +654,8 @@
 
 
   #seventh_page {
-    height: 100vh;
-    min-height: 100vh;
+    height: 730px;
+    min-height: 730px;
   }
 
   #seventh_page_heading {
@@ -390,39 +663,30 @@
     padding-left: 5vh;
   }
 
-  .we_7 {
-    height: 70%;
-    margin: 0px;
+
+  #eighth_page{
+    height: 730px;
+    min-height: 730px;
   }
 
-  .wrapper_7 .carousel_7 {
-    grid-auto-columns: calc((100% / 2) - 9px);
-  }
-
-  .card_7 .img_7 img {
-    max-width: 300px;
-    max-height: 600px;
-  }
-
-
-  .wrapper_8 .carousel_8 {
-    grid-auto-columns: 100%;
-  }
-
-
-  .card_8 .img_8 img {
-    max-width: 400px;
-    max-height: 600px;
+  #eighth_page_heading{
+    font-size: 90px;
   }
 
 
   #nineth_page {
+    height: 730px;
+    min-height: 730px;
     justify-content: end;
     align-items: center;
   }
 
   #nineth_page_heading {
     font-size: 90px;
+  }
+
+  #nineth_page_content{
+    padding-right: 0px;
   }
 
   #contacts {
@@ -445,29 +709,6 @@
     height: 45%;
   }
 
-  .we {
-    height: 73%;
-  }
-
-  .carousel .card {
-    height: auto;
-  }
-
-  .card .img img {
-    width: 200px;
-    height: 200px;
-    background-position: 50% 50%;
-  }
-
-  .carousel .card h2 {
-    font-size: 2.2rem;
-  }
-
-  .carousel .card span {
-    font-size: 1.2rem;
-  }
-
-
   #fifth_page_heading {
     font-size: 100px;
     padding-left: 5vh;
@@ -479,13 +720,24 @@
     min-height: 100vh;
   }
 
-  .card_7 .img_7 img {
-    max-width: 400px;
-    max-height: 600px;
+  .modal{
+    height: 600px;
   }
 
+  #eighth_page{
+    height: 100vh;
+    min-height: 730px;    
+  }       
+}
 
-  .wrapper_8 .carousel_8 {
-    grid-auto-columns: calc((100% / 2) - 9px);
+@media screen and (min-width: 1120px) and (max-width: 1215px){
+  #h1 h1 {
+    font-size: 120px;
   }
+
+  .fourth_page_images{
+    width: 330px;
+    height: 330px;
+  }
+  
 }

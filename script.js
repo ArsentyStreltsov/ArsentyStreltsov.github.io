@@ -41,7 +41,7 @@ const first_swiper = new Swiper("#first_swiper", {
   },
 
   breakpoints: {
-    1110: {
+    1120: {
       slidesPerView: 3,
     },  
     992: {
@@ -64,8 +64,6 @@ const second_swiper = new Swiper("#second_swiper", {
   navigation: {
     prevEl: "#second_swiper_prev",
     nextEl: "#second_swiper_next",
-
-
   }
 });
 
@@ -93,10 +91,10 @@ const fourth_swiper = new Swiper("#fourth_swiper", {
   },
 
   breakpoints: {
-    1110: {
+    1120: {
       slidesPerView: 3,
     },
-    992: {
+    900: {
       slidesPerView: 2,
     },
     600: {
