@@ -815,6 +815,10 @@ p.modal_text {
   border: 1px solid white;
 }
 
+.contact_phone {
+  text-decoration: none;
+}
+
 
 
 .media_links {
