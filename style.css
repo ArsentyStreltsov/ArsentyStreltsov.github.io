@@ -716,11 +716,11 @@ p.modal_text {
 /* ---------- seventh_page --------- */
 
 #seventh_page {
-  height: 800px;
-  min-height: 800px;
+  height: 700px;
+  min-height: 700px;
   display: flex;
   flex-direction: column;
-  align-items: end;
+  align-items: center;
   justify-content: end;
   background-image: url('media/other_media/Pages/Page_9_BG.png');
   background-position: 50% 50%;
@@ -728,38 +728,118 @@ p.modal_text {
   position: relative;
 }
 
-.seventh_page_content{
+.seventh_page_content {
+  height: 100%;
+  width: 80%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 0px 70px 50px 0px;
 }
 
 .seventh_page_heading {
   font-family: 'Mak-bold';
-  font-size: 9em;
+  font-size: 7em;
   margin: 0px;
   color: white;
 }
 
-.contacts{
-  font-family: 'Hero-bold';
-  text-align: center;
-  font-size: 1.75em;
-  color: white;
-  margin-top: 20px;
+.seventh_page_overlay {
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
-.media_links{
+.contacts {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 50px;
+  gap: 40px;
+}
+
+.contact_info_1 {
+  width: 380px !important;
+}
+
+.contact_info_2 {
+  width: 380px !important;
+}
+
+.contact_info {
+  width: 40%;
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+}
+
+.contact_info h3 {
+  text-align: center;
+  color: white;
+  font-family: 'Hero-bold';
+}
+
+.contact_info p {
+  color: white;
+  font-family: 'Hero-regular';
+}
+
+.contact_person {
+  font-size: 1em;
+  margin-top: 20px;
+  text-align: start;
+  border-radius: 5px;
+  padding: 10px;
+  border: 1px solid white;
+}
+
+.contact_name{
+  font-size: 1.5em;
+  text-align: start;
+  border-radius: 5px;
+  padding: 10px;
+  border: 1px solid white;
+}
+
+.contact_email {
+  text-align: start;
+  border-radius: 5px;
+  padding: 10px;
+  border: 1px solid white;
+}
+
+.contact_description {
+  text-align: start;
+  border-radius: 5px;
+  padding: 10px;
+  border: 1px solid white;
+}
+
+
+
+.media_links {
+  width: 100%;
   display: flex;
   justify-content: center;
+  align-items: center;
   margin-top: 20px;
 }
 
-.media_links a{
-  margin: 0px 5px 0px 5px;
+.media_links_2 {
+  margin-top: 37px;
+  display: flex;
+  justify-content: center;
 }
+
+.social_links i {
+  margin-right: 10px;
+}
+
+.social_links a {
+  text-decoration: none;
+}
+
+
 
 .fa-instagram {
   font-size: 55px;
@@ -775,6 +855,15 @@ p.modal_text {
 
 .fa-vk {
   font-size: 55px;
+}
+
+.google_form_button {
+  color: white;
+  border: 1px solid white;
+  height: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* ---------- /seventh_page --------- */

@@ -65,7 +65,7 @@
   }
 
   .scroll_down_container {
-    position: fixed;
+      position: fixed;
       right: 4vh !important;
       bottom: 4vh !important;
     }
@@ -137,6 +137,7 @@
     align-items: center;
     overflow: scroll;
     margin: 0px;
+    padding: 10px 5px 5px 5px;
   }
 
   .modal_info {
@@ -155,7 +156,7 @@
   }
 
   .modal_gallery_all {
-    height: 150px;
+    height: auto;
     margin-top: 30px;
     width: 90%;
     height: 90%;
@@ -163,6 +164,10 @@
 
   .buy_ticket {
     font-size: 13px;
+  }
+
+  .modal_gallery_nav {
+    margin-top: 10px;
   }
 
 
@@ -244,25 +249,61 @@
     width: 300px;
     height: 300px;
   }
-/* 
 
   #seventh_page {
-    height: 100vh;
-    min-height: 100vh;
+    height: 1150px;
+    min-height: 1150px;
   }
 
   .seventh_page_heading {
-    padding-left: 5vh;
-    font-size: 67.5px;
+    font-size: 55px;
+  }
+
+  .contact_heading {
+    font-size: 23px !important;
   }
 
   .contacts {
-    font-size: 17px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 0px;
+    gap: 70px;
+  }
+
+  .contact_person {
+    width: 250px;
+    font-size: 15px;
+  }
+
+  .contact_info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  }
+
+  .contact_info_1 {
+    margin-top: 40px;
+  }
+
+  .media_links_2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .google_form_button {
+    font-size: 16px;
   }
 
   .fa-brands {
     font-size: 45px;
-  } */
+  }
+
+  .fa-brands.fa-youtube {
+    margin: 0px;
+  }
 }
 
 
@@ -394,6 +435,7 @@
     align-items: center;
     overflow: scroll;
     margin: 0px;
+    padding: 15px 5px 15px 5px;  
   }
 
   .modal_info {
@@ -492,11 +534,35 @@
     padding-left: 45px;
   }
 
+  #seventh_page {
+    height: 1100px;
+    min-height: 1100px;
+  }
 
   .seventh_page_heading {
     font-size: 90px;
-    padding-bottom: 30px;
-    padding-left: 45px;
+  }
+
+  .contacts {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0px;
+    gap: 70px;
+  }
+
+  .contact_info_1 {
+    margin-top: 40px;
+  }
+
+  .media_links_2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .google_form_button {
+    font-size: 16px;
   }
 
 /* 
@@ -670,6 +736,7 @@
     align-items: center;
     overflow: scroll;
     margin: 0px;
+    padding: 15px 5px 15px 5px;
   }
 
   .modal_info {
@@ -977,5 +1044,13 @@
 
   #seventh_page {
     min-height: 730px;
+  }
+}
+
+@media screen and (min-height: 810px) {
+  .scroll_down_container {
+    position: absolute;
+    right: 30px;
+    bottom: 30px;
   }
 }

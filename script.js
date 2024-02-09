@@ -180,3 +180,32 @@ window.addEventListener("keydown", function (event) {
     modalCallForm2.classList.remove("modal-parent--open")
   }
 })
+
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    const originalParent = document.querySelector('.contact_info_1');
+    const mediaLinks1 = document.getElementById('media_links_1');
+    const targetContainer = document.querySelector('.media_links_2');
+    let hasMoved = false; // Флаг, отслеживающий перемещение
+
+    function checkWindowSize() {
+        // Если ширина окна находится в диапазоне и элемент ещё не перемещён
+        if (window.innerWidth >= 1 && window.innerWidth <= 767 && !hasMoved) {
+            if (mediaLinks1 && targetContainer) {
+                targetContainer.appendChild(mediaLinks1);
+                hasMoved = true; // Устанавливаем флаг в true после перемещения
+            }
+        // Если ширина окна выходит из диапазона и элемент был перемещён
+        } else if ((window.innerWidth < 1 || window.innerWidth > 767) && hasMoved) {
+            if (mediaLinks1 && originalParent) {
+                originalParent.appendChild(mediaLinks1);
+                hasMoved = false; // Сбрасываем флаг после возвращения
+            }
+        }
+    }
+
+    // Вызываем функцию при загрузке страницы и при изменении размера окна
+    window.addEventListener('resize', checkWindowSize);
+    checkWindowSize();
+});
