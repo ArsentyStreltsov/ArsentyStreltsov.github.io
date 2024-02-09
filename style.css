@@ -774,7 +774,7 @@ p.modal_text {
 }
 
 .contact_info h3 {
-  text-align: center;
+  text-align: start;
   color: white;
   font-family: 'Hero-bold';
 }
@@ -788,49 +788,37 @@ p.modal_text {
   font-size: 1em;
   margin-top: 20px;
   text-align: start;
-  border-radius: 5px;
-  padding: 10px;
-  border: 1px solid white;
 }
 
 .contact_name{
   font-size: 1.5em;
   text-align: start;
-  border-radius: 5px;
-  padding: 10px;
-  border: 1px solid white;
 }
 
 .contact_email {
   text-align: start;
-  border-radius: 5px;
-  padding: 10px;
-  border: 1px solid white;
+  margin-top: 5px;
 }
 
 .contact_description {
   text-align: start;
-  border-radius: 5px;
-  padding: 10px;
-  border: 1px solid white;
 }
 
-.contact_phone {
+.contact-link {
+  color: white;
   text-decoration: none;
 }
-
-
 
 .media_links {
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 20px;
+  margin-top: 80px;
 }
 
 .media_links_2 {
-  margin-top: 37px;
+  margin-top: 97px;
   display: flex;
   justify-content: center;
 }

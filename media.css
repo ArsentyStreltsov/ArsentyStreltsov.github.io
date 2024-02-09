@@ -251,8 +251,8 @@
   }
 
   #seventh_page {
-    height: 1150px;
-    min-height: 1150px;
+    height: 950px;
+    min-height: 950px;
   }
 
   .seventh_page_heading {
@@ -291,6 +291,11 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 70px;
+  }
+
+  #media_links_1 {
+    margin: 20px;
   }
 
   .google_form_button {
@@ -535,8 +540,8 @@
   }
 
   #seventh_page {
-    height: 1100px;
-    min-height: 1100px;
+    height: 950px;
+    min-height: 950px;
   }
 
   .seventh_page_heading {
@@ -554,85 +559,21 @@
     margin-top: 40px;
   }
 
+  #media_links_1 {
+    margin: 20px;
+  }
+
   .media_links_2 {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 70px;
   }
 
   .google_form_button {
     font-size: 16px;
   }
-
-/* 
-
-  .afisha_day.afisha_text {
-    height: auto;
-    font-size: 25px;
-  }
-
-  .afisha_text {
-    font-size: 20px;
-  }
-
-  .afisha_ticket {
-    font-size: 15px;
-    border: 1px solid #6c879d;
-  }
-
-  .afisha_info {
-    text-align: center;
-  }
-
-  .afisha_date {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .afisha_description {
-    width: 450px;
-    display: flex;
-    flex-direction: row;
-    padding: 10px;
-    border: 1px solid #6c879d;
-    margin-bottom: 20px;
-  }
-
-  .afisha_day {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-  }
-
-  .afisha_event {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    width: 90%;
-    height: 160px;
-    border-bottom: 1.5px solid #6c879d;
-    padding: 10px 20px 40px 20px;
-    margin-top: 30px;
-  }
-
-  #seventh_page {
-    height: 100vh;
-    min-height: 100vh;
-  }
-
-  .seventh_page_heading {
-    font-size: 55px;
-    padding-left: 5vh;
-  }
-
-  .contacts {
-    font-size: 25px;
-  } */
 }
 
 
@@ -763,30 +704,6 @@
   .sixth_page_heading {
     font-size: 95px;
   }
-
-
-/* 
-
-
-  #sixth_page_text {
-    width: 70%;
-    font-size: 20px;
-  }
-
-
-  #seventh_page {
-    height: 730px;
-    min-height: 730px;
-  }
-
-  #seventh_page_heading {
-    font-size: 70px;
-    padding-left: 5vh;
-  }
-
-  .contacts {
-    font-size: 25px;
-  } */
 }
 
 
@@ -952,68 +869,6 @@
     overflow: scroll;
     margin: 0px;
   }
-
-  /* .fourth_page_images {
-    width: 330px;
-    height: 330px;
-  }
-
-    #call-form {
-    width: 275px;
-    height: 400px;
-  }
-
-  #call-form-2 {
-    width: 275px;
-    height: 400px;
-  }
-
-  .theater {
-    height: 428px;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .our_shows {
-    width: 100%;
-    justify-content: space-evenly;
-    gap: 0px;
-  }
-
-  .modal-parent {
-    height: 99%;
-  }
-
-  .modal-wrapper {
-    height: 99%;
-  }
-
-  .modal {
-    height: 99%;
-    flex-direction: column;
-    align-items: center;
-    overflow: scroll;
-    margin: 0px;
-  }
-
-  .modal_info {
-    width: 90%;
-    text-align: center;
-    margin-left: 0px;
-    margin-bottom: 20px;
-  }
-
-  p.modal_text {
-    font-size: 20px;
-  }
-
-  .modal_gallery_all {
-    margin-top: 30px;
-    width: 500px;
-    height: 500px;
-  }*/
 } 
 
 
