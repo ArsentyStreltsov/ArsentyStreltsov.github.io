@@ -109,12 +109,33 @@ const fourth_swiper = new Swiper("#fourth_swiper", {
 
 // Modal windows #1
 
+let scrollPosition = 0; // Переменная для хранения позиции прокрутки
+
+// Функция для блокировки прокрутки фона
+function lockScroll() {
+  scrollPosition = document.documentElement.scrollTop || document.body.scrollTop; // Сохраняем текущую позицию прокрутки
+  document.body.style.overflow = 'hidden';
+  document.body.style.position = 'fixed';
+  document.body.style.top = `-${scrollPosition}px`; // Смещаем body, чтобы избежать видимого прыжка
+  document.body.style.width = '100%';
+}
+
+// Функция для разблокировки прокрутки фона
+function unlockScroll() {
+  document.body.style.overflow = '';
+  document.body.style.position = '';
+  document.body.style.top = '';
+  document.body.style.width = '';
+  window.scrollTo(0, scrollPosition);
+}
+
 const callFromBtn = document.getElementById("call-form")
 const modalCallForm = document.getElementById("modal-call-form")
 
 // Открытие модального окна
 callFromBtn.addEventListener("click", function () {
-  modalCallForm.classList.add("modal-parent--open")
+  modalCallForm.classList.add("modal-parent--open");
+  lockScroll();
 })
 
 // Закрытие модального окна
@@ -123,7 +144,8 @@ modalCallForm.querySelector(".modal").addEventListener("click", function (event)
 })
 modalCallForm.addEventListener("click", function (event) {
   if (event._isClick === true) return
-  modalCallForm.classList.remove("modal-parent--open")
+  modalCallForm.classList.remove("modal-parent--open");
+  unlockScroll();
 })
 
 // Закрытие при нажатии на Esc
@@ -141,7 +163,8 @@ const modalCallForm2 = document.getElementById("modal-call-form-2")
 
 // Открытие модального окна
 callFromBtn2.addEventListener("click", function () {
-  modalCallForm2.classList.add("modal-parent--open")
+  modalCallForm2.classList.add("modal-parent--open");
+  lockScroll();
 })
 
 // Закрытие модального окна
@@ -150,7 +173,8 @@ modalCallForm2.querySelector(".modal").addEventListener("click", function (event
 })
 modalCallForm2.addEventListener("click", function (event) {
   if (event._isClick === true) return
-  modalCallForm2.classList.remove("modal-parent--open")
+  modalCallForm2.classList.remove("modal-parent--open");
+  unlockScroll();
 })
 
 // Закрытие при нажатии на Esc

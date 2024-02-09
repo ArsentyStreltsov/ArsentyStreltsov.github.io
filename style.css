@@ -560,6 +560,13 @@ p.modal_text {
   align-items: center;
 }
 
+.body-lock {
+  overflow: hidden;
+  position: fixed;
+  /* Для предотвращения прокрутки на iOS */
+  width: 100%;
+}
+
 /* ---------- /fourth_page --------- */
 
 
