@@ -44,7 +44,7 @@ body{
   width: 100%;
 }
 
-
+/* ---------- Header --------- */
 header{
   height: 4em;
   background-color: rgba(0, 0, 0, 0.8);
@@ -55,7 +55,11 @@ header{
   z-index: 1000;
 }
 
-#logo_photo{
+.nav_top{
+  width: 100%;
+}
+
+.logo_photo{
   height: 64px;
   display: flex;
   justify-content: center;
@@ -68,21 +72,17 @@ header{
 
 }
 
-.nav_top{
-  width: 100%;
+.logo img {
+  height: 64px;
 }
 
-.nav-bar {
+.nav_bar {
   width: 100%;
   display: flex;
   justify-content: start;
   align-items: center;
   list-style: none;
   position: relative;
-}
-
-.logo img {
-  height: 64px;
 }
 
 .menu {
@@ -103,7 +103,7 @@ header{
   align-items: center;
 }
 
-.nav-link {
+.nav_link {
   transition: color 0.3s ease-in-out;
 }
 
@@ -145,6 +145,12 @@ header{
   display: none;
 }
 
+/* ---------- /Header --------- */
+
+
+
+/* ---------- first_page --------- */
+
 #first_page{
   position: relative;
   background-image: url('media/other_media/Pages/Page_1_BG.png');
@@ -168,7 +174,7 @@ header{
   align-items: center;
 }
 
-#h1{
+.h1{
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -193,28 +199,14 @@ header{
   text-align: center;
 }
 
-#h3{
-  margin-bottom: 20px;
-
-}
-
-#first_page h3 {
-  margin: 0px;
-  color: white;
-  font-family: 'Hero-light';
-  font-size: 32px;
-  text-align: center;
-}
-
-#h2andh3{
+.h2_block{
   height: 40%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
-
-.scroll-down-container{
+.scroll_down_container{
   right: 40px;
   bottom: 20px;
   width: auto;
@@ -226,9 +218,7 @@ header{
   animation: bounce 2s infinite;
 }
 
-
-
-.scroll-down-text{
+.scroll_down_text{
   font-family: 'Hero-regular';
   color: white;
   font-size: 25px;
@@ -254,6 +244,11 @@ header{
   }
 }
 
+/* ---------- /first_page --------- */
+
+
+
+/* ---------- second_page --------- */
 
 #second_page {
   background-image: url('media/other_media/Pages/Page_2_BG.png');
@@ -264,7 +259,7 @@ header{
   min-height: 730px;
 }
 
-#second_page_overlay {
+.second_page_overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -276,7 +271,7 @@ header{
   align-items: center;
 }
 
-#second_page_overlay h3 {
+.second_page_overlay h3 {
   text-align: center;
   color: white;
   font-family: 'Hero-light';
@@ -284,6 +279,12 @@ header{
   line-height: 1.2;
   padding: 20px;
 }
+
+/* ---------- /second_page --------- */
+
+
+
+/* ---------- third_page --------- */
 
 #third_page {
   height: 100vh;
@@ -294,7 +295,7 @@ header{
   position: relative;
 }
 
-#third_page_heading{
+.third_page_heading{
   font-family: 'Mak-bold';
   font-size: 7em;
   margin: 0px;
@@ -302,11 +303,22 @@ header{
   color: white;
 }
 
-.actors_cards {
-  text-decoration: none;
+.we_gallery_content {
+  overflow: hidden;
 }
 
-.actors_cards h2{
+.swiper-wrapper {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.we_cards {
+  text-decoration: none;
+  flex-shrink: 0;
+}
+
+.we_cards h2{
   font-family: 'Mak-bold';
   color: white;
   font-size: 2.6rem;
@@ -314,12 +326,37 @@ header{
   text-align: center;
 }
 
-.actors_cards span {
+.we_cards span {
   font-family: 'Hero-light';
   color: white;
   font-size: 1.5rem;
 }
 
+.we_gallery_nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+  gap: 50px;
+}
+
+.we_gallery__btn {
+  width: 28px;
+  height: 28px;
+}
+
+.we_gallery__btn svg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  fill: white;
+}
+
+/* ---------- /third_page --------- */
+
+
+
+/* ---------- fourth_page --------- */
 
 #fourth_page {
   height: 100vh;
@@ -331,7 +368,7 @@ header{
 
 }
 
-#fourth_page_heading {
+.fourth_page_heading {
   font-family: 'Mak-bold';
   font-size: 7em;
   margin: 0px;
@@ -340,21 +377,162 @@ header{
   margin-bottom: 30px;
 }
 
-#call-form {
-  font-family: "Hero-regular";
-  font-size: 2em;
-}
 
-#call-form-2 {
-  font-family: "Hero-regular";
-  font-size: 2em;
-}
+/* модальное окно №1 */
 
 .our_shows {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 100px;
+}
+
+#call-form {
+  font-family: "Hero-regular";
+  font-size: 2em;
+  width: 350px;
+  height: 450px;
+}
+
+.btn-reset {
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.btn {
+  border-radius: 3px;
+  padding: 16px;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 18px;
+  color: #000;
+  background-color: white;
+}
+
+.modal_gallery_all {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+}
+
+.modal_gallery {
+  width: 100%;
+}
+
+.modal_swiper {
+  width: 100%;
+}
+
+.modal_swiper_slide {
+  width: 100%;
+}
+
+.modal_gallery_cards {
+  flex-shrink: 0;
+}
+
+.modal_card_image {
+  border-radius: 5px;
+}
+
+.modal_gallery_nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+  gap: 50px;
+}
+
+.modal_gallery__btn {
+  width: 28px;
+  height: 28px;
+}
+
+.modal_gallery__btn svg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  fill: white;
+}
+
+/* модальное окно №2 */
+
+.modal-parent {
+  position: fixed;
+  inset: 0;
+  z-index: 500;
+  display: flex;
+  overflow-y: auto;
+  background-color: rgba(0, 0, 0, 0.8);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 60px;
+}
+
+.modal-parent--open {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal {
+  margin: 30px 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  padding: 40px 20px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.modal_info {
+  width: 47%;
+  margin-left: 10px;
+}
+
+.modal_title {
+  margin: 0;
+  margin-bottom: 30px;
+  text-align: center;
+  font-family: "Hero-regular";
+}
+
+h2.modal_title {
+  font-size: 2.5em;
+}
+
+.modal_text {
+  font-family: "Hero-regular";
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+p.modal_text {
+  font-size: 18px;
+}
+
+.buy_ticket {
+  font-family: "Hero-regular";
+  border-radius: 5px;
+  border: 1px solid black;
+  padding: 7px;
+  text-decoration: none;
+  color: black;
+}
+
+#call-form-2 {
+  font-family: "Hero-regular";
+  font-size: 2em;
+  width: 350px;
+  height: 450px;  
 }
 
 .btn-reset_2 {
@@ -374,107 +552,6 @@ header{
   background-color: white;
 }
 
-.modal-parent_2 {
-  position: fixed;
-  inset: 0;
-  z-index: 500;
-  display: flex;
-  overflow-y: auto;
-  background-color: rgba(0, 0, 0, 0.8);
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
-}
-
-.modal-wrapper_2 {
-  margin: auto;
-  width: 90%;
-  max-width: 500px;
-}
-
-.modal_2 {
-  margin: 30px 0;
-  width: 100%;
-  border-radius: 5px;
-  padding: 40px 20px;
-  background-color: #fff;
-}
-
-.modal__title_2 {
-  margin: 0;
-  margin-bottom: 30px;
-  text-align: center;
-}
-
-.form_2 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 20px;
-  width: 100%;
-}
-
-.form__field_2 {
-  width: 100%;
-}
-
-.form__text_2 {
-  display: block;
-  margin-bottom: 3px;
-}
-
-.form__input_2 {
-  width: 100%;
-  height: 40px;
-}
-
-.form__btn_2 {
-  width: 100%;
-}
-
-.modal-parent_2--open {
-  opacity: 1;
-  visibility: visible;
-}
-
-
-#call-form {
-  width: 350px;
-  height: 450px;
-}
-
-#call-form-2 {
-  width: 350px;
-  height: 450px;
-}
-
-.btn {
-  border-radius: 3px;
-  padding: 16px;
-  font-family: inherit;
-  font-weight: 700;
-  font-size: 18px;
-  color: #000;
-  background-color: white;
-}
-
-
-.modal-parent {
-  position: fixed;
-  inset: 0;
-  z-index: 500;
-  display: flex;
-  overflow-y: auto;
-  background-color: rgba(0, 0, 0, 0.8);
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-top: 60px;
-}
-
 .modal-wrapper {
   width: 80%;
   height: 70%;
@@ -483,77 +560,11 @@ header{
   align-items: center;
 }
 
-.modal {
-  margin: 30px 0;
-  width: 100%;
-  height: 100%;
-  border-radius: 5px;
-  padding: 40px 20px;
-  background-color: #fff;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
+/* ---------- /fourth_page --------- */
 
-.modal_info{
-  width: 47%;
-  margin-left: 10px;
-}
 
-.modal__title {
-  margin: 0;
-  margin-bottom: 30px;
-  text-align: center;
-  font-family: "Hero-regular";
-}
 
-h2.modal__title{
-  font-size: 2.5em;
-}
-
-.modal_text {
-  font-family: "Hero-regular";
-  width: 100%;
-  margin-bottom: 20px;
-}
-
-p.modal_text{
-  font-size: 18px;
-}
-
-.modal_gallery_all{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 50%;
-}
-
-.modal_gallery{
-  width: 100%;
-}
-
-.modal_swiper{
-  width: 100%;
-}
-
-.modal_swiper_slide{
-  width: 100%;
-}
-
-.modal-parent--open {
-  opacity: 1;
-  visibility: visible;
-}
-
-.buy_ticket{
-  font-family: "Hero-regular";
-  border-radius: 5px;
-  border: 1px solid black;
-  padding: 7px;
-  text-decoration: none;
-  color: black;
-}
-
+/* ---------- fifth_page --------- */
 
 #fifth_page {
   height: 100vh;
@@ -570,9 +581,7 @@ p.modal_text{
   font-size: 7em;
   color: white;
   margin: 0px 0px 50px 0px;
-
   padding: 10vh 0px 0px 10vh;
-
 }
 
 .afisha{
@@ -582,9 +591,13 @@ p.modal_text{
   flex-direction: column;
 }
 
-.afisha_text{
-  color: white;
-  font-family: "Hero-regular";
+.afisha_event {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #6c879d;
+  padding: 10px 20px;
+  width: 80%;
 }
 
 .afisha_description{
@@ -592,49 +605,44 @@ p.modal_text{
   flex-direction: row;
 }
 
-.afisha-event {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-bottom: 1px solid #6c879d;
-  /* Цвет линии */
-  padding: 10px 20px;
-  width: 80%;
-}
-
-.afisha-date {
+.afisha_date {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 90px;
 }
 
-.afisha-day {
+.afisha_day {
   font-size: 36px;
   line-height: 1;
 }
 
-.afisha-month {
+.afisha_text{
+  color: white;
+  font-family: "Hero-regular";
+}
+
+.afisha_month {
   font-size: 18px;
 }
 
-.afisha-info {
-  flex-grow: 1;
-  padding-left: 30px;
-}
-
-.afisha-title {
+.afisha_title {
   font-size: 24px;
   margin: 0;
   padding: 0;
   text-decoration: none;
 }
 
-.afisha-time {
+.afisha_info {
+  flex-grow: 1;
+  padding-left: 30px;
+}
+
+.afisha_time {
   font-size: 18px;
 }
 
-.afisha-action {
+.afisha_action {
   margin-left: 20px;
 }
 
@@ -643,65 +651,13 @@ p.modal_text{
   border: 1px solid white;
 }
 
-.afisha-buy-ticket {
-  text-decoration: none;
-  color: blue;
-  /* Цвет текста кнопки */
-  padding: 5px 10px;
-  border: 1px solid blue;
-  /* Цвет границы кнопки */
-  border-radius: 5px;
-  transition: background-color 0.3s, color 0.3s;
-}
+/* ---------- /fifth_page --------- */
 
-.afisha-buy-ticket:hover {
-  background-color: blue;
-  /* Цвет фона при наведении */
-  color: #004040;
-  /* Цвет текста при наведении */
-}
 
+
+/* ---------- sixth_page --------- */
 
 #sixth_page {
-  height: 100vh;
-  background-color: grey;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-image: url('media/other_media/Pages/Page_6_BG.png');
-  background-position: 50% 50%;
-  background-size: cover;
-  position: relative;
-}
-
-#sixth_page_text {
-  font-family: 'Hero-bold';
-  font-size: 1.3em;
-  margin: 0px;
-  text-align: center;
-  width: 40%;
-  color: white;
-}
-
-#seventh_page {
-  height: 100vh;
-  min-height: 100vh;
-  background-image: url('media/other_media/Pages/Page_7_BG.png');
-  background-position: 50% 50%;
-  background-size: cover;
-  position: relative;
-}
-
-#seventh_page_heading {
-  font-family: 'Mak-bold';
-  font-size: 7em;
-  margin: 0px;
-  padding: 10vh 0px 0px 10vh;
-  color: white;
-}
-
-
-#eighth_page {
   height: 100vh;
   min-height: 730px;
   background-image: url('media/other_media/Pages/Page_8_BG.png');
@@ -710,7 +666,7 @@ p.modal_text{
   position: relative;
 }
 
-#eighth_page_heading {
+#sixth_page_heading {
   font-family: 'Mak-bold';
   font-size: 7em;
   margin: 0px;
@@ -719,24 +675,21 @@ p.modal_text{
   padding: 10vh 0px 0px 10vh;
 }
 
-
-
 .actors_gallery_content {
   overflow: hidden;
 }
 
 .actors_cards {
+  text-decoration: none;
   flex-shrink: 0;
-}
-
-.actor_card_image {
-  border-radius: 5px;
 }
 
 .actors_gallery_nav {
   display: flex;
   align-items: center;
-  gap: 30px;
+  justify-content: center;
+  margin-top: 30px;
+  gap: 50px;
 }
 
 .actors_gallery__btn {
@@ -751,31 +704,13 @@ p.modal_text{
   fill: white;
 }
 
-.btn-reset {
-  border: none;
-  padding: 0;
-  background-color: transparent;
-  cursor: pointer;
-}
-
-.swiper-wrapper {
-  display: flex;
-  align-items: center;
-  text-align: center;
-}
+/* ---------- /sixth_page --------- */
 
 
 
-.actors_gallery_nav {
-  display: flex;
-  justify-content: center;
-  margin-top: 30px;
-  gap: 50px;
-}
+/* ---------- seventh_page --------- */
 
-
-
-#nineth_page {
+#seventh_page {
   height: 100vh;
   min-height: 730px;
   display: flex;
@@ -788,7 +723,7 @@ p.modal_text{
   position: relative;
 }
 
-#nineth_page_content{
+.seventh_page_content{
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -796,14 +731,14 @@ p.modal_text{
   padding: 0px 70px 50px 0px;
 }
 
-#nineth_page_heading {
+.seventh_page_heading {
   font-family: 'Mak-bold';
   font-size: 9em;
   margin: 0px;
   color: white;
 }
 
-#contacts{
+.contacts{
   font-family: 'Hero-bold';
   text-align: center;
   font-size: 1.75em;
@@ -811,16 +746,15 @@ p.modal_text{
   margin-top: 20px;
 }
 
-#media_links{
+.media_links{
   display: flex;
   justify-content: center;
   margin-top: 20px;
 }
 
-#media_links a{
+.media_links a{
   margin: 0px 5px 0px 5px;
 }
-
 
 .fa-instagram {
   font-size: 55px;
@@ -838,3 +772,4 @@ p.modal_text{
   font-size: 55px;
 }
 
+/* ---------- /seventh_page --------- */

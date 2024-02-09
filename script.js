@@ -1,4 +1,5 @@
 // burger menu
+
 document.addEventListener('DOMContentLoaded', function () {
   let headerHeight = document.querySelector('header').offsetHeight;
   
@@ -7,7 +8,7 @@ window.addEventListener('resize', function () {
   headerHeight = document.querySelector('header').offsetHeight;
   });
 
-const navLinks = document.querySelectorAll('.nav-link');
+const navLinks = document.querySelectorAll('.nav_link');
 
 navLinks.forEach(function (link) {
   link.addEventListener('click', function (event) {
@@ -30,7 +31,8 @@ navLinks.forEach(function (link) {
 });
 
 
-// gallerys
+// galleries
+
 const first_swiper = new Swiper("#first_swiper", {
   loop: true,
   freeMode: true,
@@ -44,7 +46,7 @@ const first_swiper = new Swiper("#first_swiper", {
     1120: {
       slidesPerView: 3,
     },  
-    992: {
+    800: {
       slidesPerView: 2,
     },
     600: {
@@ -105,7 +107,8 @@ const fourth_swiper = new Swiper("#fourth_swiper", {
 });
 
 
-// Модальное окно
+// Modal windows #1
+
 const callFromBtn = document.getElementById("call-form")
 const modalCallForm = document.getElementById("modal-call-form")
 
@@ -131,7 +134,8 @@ window.addEventListener("keydown", function (event) {
 })
 
 
-// Модальное окно #2
+// Modal windows #2
+
 const callFromBtn2 = document.getElementById("call-form-2")
 const modalCallForm2 = document.getElementById("modal-call-form-2")
 

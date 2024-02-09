@@ -39,6 +39,16 @@
     align-items: center;
   }
 
+  #first_page h1{
+    font-size: 70px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  #first_page h2{
+    font-size: 20px;
+  }
+
   .scroll-down-text {
     font-size: 20px;
   }
@@ -59,6 +69,10 @@
     margin-bottom: 30px;
   }
 
+
+  .actors_gallery_content{
+    margin-top: 100px;
+  }
 
 
   .img img{
@@ -166,7 +180,6 @@
   }
 
 
-
   .afisha-day.afisha_text{
     height: auto;
     font-size: 25px;
@@ -219,11 +232,6 @@
     padding: 10px 20px 40px 20px;
     margin-top: 30px;
   }
-
-
-
-
-
 
 
   #sixth_page_text {
@@ -720,9 +728,63 @@
     min-height: 100vh;
   }
 
-  .modal{
-    height: 600px;
+  #call-form {
+    width: 275px;
+    height: 400px;
   }
+
+  #call-form-2 {
+    width: 275px;
+    height: 400px;
+  }
+
+  .theater{
+    height: 428px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .our_shows{
+    width: 100%;
+    justify-content: space-evenly;
+    gap: 0px;
+  }
+
+  .modal-parent{
+    height: 99%;
+  }
+
+  .modal-wrapper{
+    height: 99%;
+  }
+
+  .modal{
+    height: 99%;
+    flex-direction: column;
+    align-items: center;
+    overflow: scroll;
+    margin: 0px;
+  }
+
+  .modal_info{
+    width: 90%;
+    text-align: center;
+    margin-left: 0px;
+    margin-bottom: 20px;
+  }
+
+  p.modal_text{
+    font-size: 20px;
+  }
+
+  .modal_gallery_all{
+    margin-top: 30px;
+    width: 500px;
+    height: 500px;
+  }
+
 
   #eighth_page{
     height: 100vh;
@@ -738,6 +800,63 @@
   .fourth_page_images{
     width: 330px;
     height: 330px;
+  }
+
+    #call-form {
+    width: 275px;
+    height: 400px;
+  }
+
+  #call-form-2 {
+    width: 275px;
+    height: 400px;
+  }
+
+  .theater{
+    height: 428px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .our_shows{
+    width: 100%;
+    justify-content: space-evenly;
+    gap: 0px;
+  }
+
+  .modal-parent{
+    height: 99%;
+  }
+
+  .modal-wrapper{
+    height: 99%;
+  }
+
+  .modal{
+    height: 99%;
+    flex-direction: column;
+    align-items: center;
+    overflow: scroll;
+    margin: 0px;
+  }
+
+  .modal_info{
+    width: 90%;
+    text-align: center;
+    margin-left: 0px;
+    margin-bottom: 20px;
+  }
+
+  p.modal_text{
+    font-size: 20px;
+  }
+
+  .modal_gallery_all{
+    margin-top: 30px;
+    width: 500px;
+    height: 500px;
   }
   
 }
