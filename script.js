@@ -84,16 +84,13 @@ const third_swiper = new Swiper("#third_swiper", {
 
 
 const fourth_swiper = new Swiper("#fourth_swiper", {
-  loop: true,
-  freeMode: true,
-
   navigation: {
     prevEl: "#fourth_swiper_prev",
     nextEl: "#fourth_swiper_next"
   },
 
   breakpoints: {
-    1120: {
+    1230: {
       slidesPerView: 3,
     },
     900: {
@@ -102,9 +99,9 @@ const fourth_swiper = new Swiper("#fourth_swiper", {
     600: {
       slidesPerView: 1,
     }
-
   }
 });
+
 
 
 // Modal windows #1

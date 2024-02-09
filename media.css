@@ -5,7 +5,7 @@
   }
 
   header {
-    height: 7vh;
+    height: 64px;
   }
 
   .menu {
@@ -31,63 +31,65 @@
     right: 0;
   }
 
-  .button {
-    font-size: 20px;
+  .nav_bar {
+    height: 3.16em;
   }
 
-  #first_page{
-    align-items: center;
-  }
-
-  #first_page h1{
-    font-size: 70px;
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-
-  #first_page h2{
-    font-size: 20px;
-  }
-
-  .scroll-down-text {
-    font-size: 20px;
-  }
-
-  .scroll-down-container{
-    right: 20px;
-    
-  }
-
-  #second_page_overlay h3 {
+  .nav_link{
     font-size: 3.5em;
   }
 
+  .logo {
+    padding-left: 3.15em;
+  }
 
-  #third_page_heading {
-    font-size: 50px;
-    padding-left: 5vh;
-    margin-bottom: 30px;
+  .logo img {
+    height: 4em;
+  }
+
+  .text{
+    height: 24%;
+  }
+
+  #first_page h1 {
+    font-size: 13em;
+    padding: 0px 30px 0px 30px;
+  }
+
+  #first_page h2 {
+    font-size: 3.8em;
+  }
+
+  .scroll_down_text{
+    font-size: 2.7em;
+  }
+
+  .scroll_down_container {
+    position: fixed;
+      right: 4vh !important;
+      bottom: 4vh !important;
+    }
+
+
+  .second_page_overlay h3 {
+    font-size: 3em;
   }
 
 
-  .actors_gallery_content{
-    margin-top: 100px;
+  .third_page_heading {
+    font-size: 65px;
+    padding-bottom: 70px;
+    padding-left: 45px;
   }
 
-
-  .img img{
-    width: 200px !important;
-    height: 200px !important;
+  .we_gallery_nav{
+    gap: 40px;
   }
 
-  .actors_cards h2{
-    font-size: 35px;
-  }
-
-  #fourth_page_heading {
-    font-size: 50px;
-    padding-left: 5vh;
-    margin-bottom: 30px;
+  .fourth_page_heading {
+    font-size: 55px;
+    padding-left: 45px;
+    padding-bottom: 65px;
   }
 
 
@@ -103,7 +105,7 @@
     font-size: 22px;
   }
 
-  .theater{
+  .theater {
     height: 530px;
     width: 100%;
     display: flex;
@@ -111,7 +113,7 @@
     justify-content: center;
   }
 
-  .our_shows{
+  .our_shows {
     width: 100%;
     height: 530px;
     flex-direction: column;
@@ -119,93 +121,88 @@
     gap: 20px;
   }
 
-  .modal-parent{
+  .modal-parent {
+    padding-top: 0px;
+    height: 100%;
+  }
+
+  .modal-wrapper {
     height: 99%;
   }
 
-  .modal-wrapper{
-    height: 99%;
-  }
-
-  .modal{
+  .modal {
     width: 85%;
-    height: 99%;
+    height: 90%;
     flex-direction: column;
     align-items: center;
     overflow: scroll;
     margin: 0px;
   }
 
-  .modal_info{
+  .modal_info {
     width: 90%;
     text-align: center;
     margin-left: 0px;
     margin-bottom: 20px;
   }
 
-  p.modal_text{
+  p.modal_text {
     font-size: 14px;
   }
 
-  h2.modal__title{
+  h2.modal_title {
     font-size: 25px;
   }
 
-  .modal_gallery_all{
+  .modal_gallery_all {
     height: 150px;
     margin-top: 30px;
     width: 90%;
     height: 90%;
   }
 
-  .buy_ticket{
+  .buy_ticket {
     font-size: 13px;
   }
 
-  .actor_card_image img{
-    width: 250px;
-    height: 250px;
-    max-height: 250px;
-  }
 
   #fifth_page {
-    height: 165vh;
+    height: 1130px;
     min-height: 1130px;
   }
 
   .fifth_page_heading {
-    font-size: 50px;
-    padding-left: 5vh;
-    margin-bottom: 30px;
+    font-size: 55px;
+    padding-left: 45px;
+    padding-bottom: 10px;
   }
 
-
-  .afisha-day.afisha_text{
+  .afisha_day.afisha_text {
     height: auto;
     font-size: 25px;
   }
 
-  .afisha_text{
+  .afisha_text {
     font-size: 17px;
   }
 
-  .afisha_ticket{
+  .afisha_ticket {
     font-size: 15px;
     border: 1px solid #6c879d;
   }
 
-  .afisha-info{
+  .afisha_info {
     text-align: center;
   }
 
-  .afisha-date{
+  .afisha_date {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
 
-  .afisha_description{
+  .afisha_description {
     width: 250px;
     display: flex;
     flex-direction: row;
@@ -214,7 +211,7 @@
     margin-bottom: 20px;
   }
 
-  .afisha-day{
+  .afisha_day {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -222,7 +219,7 @@
     height: 100%;
   }
 
-  .afisha-event{
+  .afisha_event {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -233,72 +230,61 @@
     margin-top: 30px;
   }
 
-
-  #sixth_page_text {
-    font-size: 3em;
-    width: 70%;
+  #sixth_page {
+    height: 600px;
+    min-height: 600px !important;
   }
 
+  .sixth_page_heading {
+    font-size: 55px;
+    padding: 75px 0px 45px 45px;
+  }
+
+  .fourth_page_images {
+    width: 300px;
+    height: 300px;
+  }
+/* 
 
   #seventh_page {
     height: 100vh;
     min-height: 100vh;
   }
 
-  #seventh_page_heading {
+  .seventh_page_heading {
     padding-left: 5vh;
     font-size: 67.5px;
   }
 
-
-  #eighth_page_heading {
-    font-size: 50px;
-    padding-left: 5vh;
-    margin-bottom: 50px;
-  }
-
-
-  #nineth_page {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  #nineth_page_heading {
-    display: inline-block;
-    font-size: 50px;
-  }
-
-  #nineth_page_content {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    margin: 0px;
-    padding-right: 0px;
-  }
-
-  #contacts {
+  .contacts {
     font-size: 17px;
   }
 
-  .fa-brands{
+  .fa-brands {
     font-size: 45px;
-  }
+  } */
+}
 
-  .fourth_page_images{
-    width: 240px;
-    height: 240px;
+
+@media screen and (min-width: 544px) and (max-width: 575px){
+  .text{
+    height: 15%;
   }
 }
 
+
 @media screen and (min-width: 576px) and (max-width: 767px) {
-  .scroll-down-text{
-    font-size: 20px;
+
+  .nav_link{
+    font-size: 1.3em;
   }
 
-  .button {
-    font-size: 20px;
+  .logo {
+    padding-left: 1em;
+  }
+
+  .logo img {
+    height: 3em;
   }
 
 
@@ -325,43 +311,44 @@
     right: 0;
   }
 
-
-  #h1 h1 {
-    font-size: 65px;
+  #first_page h1 {
+    font-size: 5em;
+    padding: 0px 30px 0px 30px;
   }
 
-  #h2andh3 {
-    height: 45%;
+  #first_page h2 {
+    font-size: 2.1em;
   }
 
-  #h2 h2 {
-    font-size: 25px;
+  .scroll_down_text{
+    font-size: 1.17em;
   }
 
-  #second_page_overlay h3 {
-    font-size: 20px;
+  .scroll_down_container {
+    position: fixed;
+    right: 4vh !important;
+    bottom: 4vh !important;
   }
 
-  #h3 h3 {
-    font-size: 15px;
+  .second_page_overlay h3 {
+    font-size: 1.3em;
   }
 
-
-  #third_page_heading {
-    font-size: 70px;
-    padding-left: 5vh;
-    margin-bottom: 40px;
+  .third_page_heading {
+    font-size: 90px;
+    padding-bottom: 70px;
+    padding-left: 45px;
   }
 
-  #fourth_page_heading {
-    font-size: 70px;
-    padding-left: 5vh;
-    margin-bottom: 40px;
+  #fourth_page{
+    height: 700px;
+    min-height: 700px;
   }
 
-  #fifth_page{
-    height: 145vh;
-    min-height: 990px;
+  .fourth_page_heading {
+    font-size: 90px;
+    padding-bottom: 30px;
+    padding-left: 45px;
   }
 
 
@@ -377,7 +364,7 @@
     font-size: 20px;
   }
 
-  .theater{
+  .theater {
     height: 428px;
     width: 100%;
     display: flex;
@@ -385,98 +372,92 @@
     justify-content: center;
   }
 
-  .our_shows{
+  .our_shows {
     width: 100%;
     justify-content: space-evenly;
     gap: 0px;
   }
 
-  .modal-parent{
+  .modal-parent {
+    padding-top: 0px;
+    height: 100%;
+  }
+
+  .modal-wrapper {
     height: 99%;
   }
 
-  .modal-wrapper{
-    height: 99%;
-  }
-
-  .modal{
+  .modal {
     width: 85%;
-    height: 99%;
+    height: 90%;
     flex-direction: column;
     align-items: center;
     overflow: scroll;
     margin: 0px;
   }
 
-  .modal_info{
+  .modal_info {
     width: 90%;
     text-align: center;
     margin-left: 0px;
     margin-bottom: 20px;
   }
 
-  p.modal_text{
+  p.modal_text {
     font-size: 15px;
   }
 
-  h2.modal__title{
+  h2.modal_title {
     font-size: 28px;
   }
 
-  .modal_gallery_all{
+  .modal_gallery_all {
     margin-top: 30px;
     width: 90%;
     height: 90%;
   }
 
-  .buy_ticket{
+  .buy_ticket {
     font-size: 13px;
   }
 
-  #third_slider.swiper-slide{
-    width: 300px;
-    height: 300px;
+  #fifth_page {
+    height: 1050px;
+    min-height: 1050px;
   }
-
-  .actor_card_image img{
-    width: 250px;
-    height: 250px;
-  }
-
-
 
   .fifth_page_heading {
-    font-size: 70px;
-    padding-left: 5vh;
-    margin-bottom: 10px;
+    font-size: 90px;
+    padding-bottom: 30px;
+    padding-left: 45px;
   }
 
-  .afisha-day.afisha_text{
+  .afisha_day.afisha_text {
     height: auto;
     font-size: 25px;
   }
 
-  .afisha_text{
+  .afisha_text {
     font-size: 20px;
   }
 
-  .afisha_ticket{
+  .afisha_ticket {
     font-size: 15px;
     border: 1px solid #6c879d;
   }
 
-  .afisha-info{
+  .afisha_info {
     text-align: center;
   }
 
-  .afisha-date{
+  .afisha_date {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
 
-  .afisha_description{
+  .afisha_description {
     width: 450px;
     display: flex;
     flex-direction: row;
@@ -485,7 +466,7 @@
     margin-bottom: 20px;
   }
 
-  .afisha-day{
+  .afisha_day {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -493,7 +474,7 @@
     height: 100%;
   }
 
-  .afisha-event{
+  .afisha_event {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -505,87 +486,148 @@
   }
 
 
-  #sixth_page_text {
-    font-size: 20px;
-    width: 65%;
+  .sixth_page_heading {
+    font-size: 90px;
+    padding-bottom: 70px;
+    padding-left: 45px;
   }
 
+
+  .seventh_page_heading {
+    font-size: 90px;
+    padding-bottom: 30px;
+    padding-left: 45px;
+  }
+
+/* 
+
+  .afisha_day.afisha_text {
+    height: auto;
+    font-size: 25px;
+  }
+
+  .afisha_text {
+    font-size: 20px;
+  }
+
+  .afisha_ticket {
+    font-size: 15px;
+    border: 1px solid #6c879d;
+  }
+
+  .afisha_info {
+    text-align: center;
+  }
+
+  .afisha_date {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .afisha_description {
+    width: 450px;
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    border: 1px solid #6c879d;
+    margin-bottom: 20px;
+  }
+
+  .afisha_day {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+
+  .afisha_event {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 90%;
+    height: 160px;
+    border-bottom: 1.5px solid #6c879d;
+    padding: 10px 20px 40px 20px;
+    margin-top: 30px;
+  }
 
   #seventh_page {
     height: 100vh;
     min-height: 100vh;
   }
 
-
-  #seventh_page_heading {
+  .seventh_page_heading {
     font-size: 55px;
     padding-left: 5vh;
   }
 
-
-  #eighth_page_heading {
-    font-size: 70px;
-    padding-left: 5vh;
-  }
-
-
-  #nineth_page {
-    align-items: center;
-  }
-
-  #nineth_page_content {
-    margin-right: 0px;
-    padding-right: 0px;
-  }
-
-  #nineth_page_heading {
-    font-size: 70px;
-  }
-
-  #contacts {
+  .contacts {
     font-size: 25px;
+  } */
+}
+
+
+@media screen and (min-width: 656px) and (max-width: 767px){
+  .text{
+    height: 18%;
   }
 }
 
+
 @media screen and (min-width: 768px) and (max-width: 991px) {
-  .button {
-    font-size: 15px;
+
+  .nav_bar {
+    height: 3.16em;
   }
 
-  #h1 h1 {
-    font-size: 80px;
+  .nav_link{
+    font-size: 1.1em;
   }
 
-  #h2 h2 {
-    font-size: 35px;
+  .logo {
+    padding-left: 1em;
   }
 
-  #h3 h3 {
-    font-size: 25px;
+  .logo img {
+    height: 4em;
   }
 
-  #h2andh3 {
-    height: 44%;
+  .text{
+    height: 20%;
   }
 
-
-  #second_page_overlay h3 {
-    font-size: 25px;
+  #first_page h1 {
+    font-size: 5.5em;
+    padding: 0px 30px 0px 30px;
   }
 
-
-  #third_page_heading {
-    font-size: 90px;
+  #first_page h2 {
+    font-size: 2.1em;
   }
 
-
-  #fourth_page{
-    height: 730px;
-    min-height: 730px;
+  .scroll_down_text {
+    font-size: 1.17em;
   }
 
-  #fourth_page_heading{
-    font-size: 90px;
+  .scroll_down_container {
+    position: fixed;
+    right: 4vh !important;
+    bottom: 4vh !important;
+  }
+
+  .second_page_overlay h3 {
+    font-size: 1.6em;
+  }
+
+  .third_page_heading {
+    font-size: 95px;
+  }
+
+  .fourth_page_heading {
+    font-size: 95px;
   }
 
   #call-form {
@@ -598,7 +640,7 @@
     height: 400px;
   }
 
-  .theater{
+  .theater {
     height: 428px;
     width: 100%;
     display: flex;
@@ -606,54 +648,58 @@
     justify-content: center;
   }
 
-  .our_shows{
+  .our_shows {
     width: 100%;
     justify-content: space-evenly;
     gap: 0px;
   }
 
-  .modal-parent{
-    height: 99%;
+  .modal-parent {
+    padding-top: 0px;
+    height: 100%;
   }
 
-  .modal-wrapper{
-    height: 99%;
+  .modal-wrapper {
+    height: 100%;
   }
 
-  .modal{
-    height: 99%;
+  .modal {
+    width: 85%;
+    height: 90%;
     flex-direction: column;
     align-items: center;
     overflow: scroll;
     margin: 0px;
   }
 
-  .modal_info{
+  .modal_info {
     width: 90%;
     text-align: center;
     margin-left: 0px;
     margin-bottom: 20px;
   }
 
-  p.modal_text{
+  p.modal_text {
     font-size: 20px;
   }
 
-  .modal_gallery_all{
+  .modal_gallery_all {
     margin-top: 30px;
     width: 500px;
     height: 500px;
   }
 
-  #fifth_page{
-  height: 730px;
-  min-height: 730px;
+  .fifth_page_heading {
+    font-size: 95px;
   }
 
-  .fifth_page_heading{
-    font-size: 90px;
-    padding-left: 10vh;
+  .sixth_page_heading {
+    font-size: 95px;
   }
+
+
+/* 
+
 
   #sixth_page_text {
     width: 70%;
@@ -671,61 +717,55 @@
     padding-left: 5vh;
   }
 
-
-  #eighth_page{
-    height: 730px;
-    min-height: 730px;
-  }
-
-  #eighth_page_heading{
-    font-size: 90px;
-  }
-
-
-  #nineth_page {
-    height: 730px;
-    min-height: 730px;
-    justify-content: end;
-    align-items: center;
-  }
-
-  #nineth_page_heading {
-    font-size: 90px;
-  }
-
-  #nineth_page_content{
-    padding-right: 0px;
-  }
-
-  #contacts {
+  .contacts {
     font-size: 25px;
-  }
-
-
+  } */
 }
 
+
 @media screen and (min-width: 992px) and (max-width: 1119px) {
-  #h1 h1 {
-    font-size: 100px;
+
+  .nav_bar {
+    height: 3.16em;
   }
 
-  #h2 h2 {
-    font-size: 50px;
+  .logo {
+    padding-left: 1em;
   }
 
-  #h2andh3 {
-    height: 45%;
+  .logo img {
+    height: 4em;
   }
 
-  #fifth_page_heading {
-    font-size: 100px;
-    padding-left: 5vh;
+  .text{
+    height: 30%;
+  }
+
+  #first_page h1 {
+    font-size: 7em;
+  }
+
+  #first_page h2 {
+    font-size: 2.9em;
+  }
+
+  .third_page_heading {
+    font-size: 105px;
   }
 
 
-  #seventh_page {
-    height: 100vh;
-    min-height: 100vh;
+  .fourth_page_heading {
+    font-size: 105px;
+  }
+
+  .scroll_down_text {
+    font-size: 1.35em;
+  }
+
+  .scroll_down_container {
+    position: fixed;
+    right: 4vh !important;
+    bottom: 4vh !important;
   }
 
   #call-form {
@@ -738,7 +778,7 @@
     height: 400px;
   }
 
-  .theater{
+  .theater {
     height: 428px;
     width: 100%;
     display: flex;
@@ -746,58 +786,107 @@
     justify-content: center;
   }
 
-  .our_shows{
+  .our_shows {
     width: 100%;
     justify-content: space-evenly;
     gap: 0px;
   }
 
-  .modal-parent{
-    height: 99%;
+  .modal-parent {
+    padding-top: 0px;
+    height: 100%;
   }
 
-  .modal-wrapper{
-    height: 99%;
+  .modal-wrapper {
+    height: 100%;
   }
 
-  .modal{
-    height: 99%;
+  .modal {
+    width: 85%;
+    height: 90%;
     flex-direction: column;
     align-items: center;
     overflow: scroll;
     margin: 0px;
   }
 
-  .modal_info{
+  .modal_info {
     width: 90%;
     text-align: center;
     margin-left: 0px;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
   }
 
-  p.modal_text{
+  p.modal_text {
     font-size: 20px;
   }
 
-  .modal_gallery_all{
+  .modal_gallery_all {
     margin-top: 30px;
     width: 500px;
     height: 500px;
   }
 
-
-  #eighth_page{
-    height: 100vh;
-    min-height: 730px;    
-  }       
-}
-
-@media screen and (min-width: 1120px) and (max-width: 1215px){
-  #h1 h1 {
-    font-size: 120px;
+  .modal_card_image{
+    width: 500px !important;
+    height: 500px !important;
   }
 
-  .fourth_page_images{
+  .modal_gallery_nav{
+    margin-bottom: 30px;
+  }
+  
+  .fifth_page_heading {
+    font-size: 105px;
+  }
+
+  .sixth_page_heading {
+    font-size: 105px;
+  }
+}
+
+
+@media screen and (min-width: 1120px) and (max-width: 1215px){
+  .text{
+    height: 30%;
+  }
+
+  #first_page h1 {
+    font-size: 7em;
+  }
+
+  #first_page h2 {
+    font-size: 2.9em;
+  }
+
+  .scroll_down_text {
+    font-size: 1.35em;
+  }
+
+  .scroll_down_container {
+    position: fixed;
+    right: 4vh !important;
+    bottom: 4vh !important;
+  }
+
+
+  .modal-parent {
+    padding-top: 0px;
+    height: 100%;
+  }
+
+  .modal-wrapper {
+    height: 100%;
+  }
+
+  .modal {
+    width: 85%;
+    height: 85%;
+    overflow: scroll;
+    margin: 0px;
+  }
+
+  /* .fourth_page_images {
     width: 330px;
     height: 330px;
   }
@@ -812,7 +901,7 @@
     height: 400px;
   }
 
-  .theater{
+  .theater {
     height: 428px;
     width: 100%;
     display: flex;
@@ -820,21 +909,21 @@
     justify-content: center;
   }
 
-  .our_shows{
+  .our_shows {
     width: 100%;
     justify-content: space-evenly;
     gap: 0px;
   }
 
-  .modal-parent{
+  .modal-parent {
     height: 99%;
   }
 
-  .modal-wrapper{
+  .modal-wrapper {
     height: 99%;
   }
 
-  .modal{
+  .modal {
     height: 99%;
     flex-direction: column;
     align-items: center;
@@ -842,21 +931,51 @@
     margin: 0px;
   }
 
-  .modal_info{
+  .modal_info {
     width: 90%;
     text-align: center;
     margin-left: 0px;
     margin-bottom: 20px;
   }
 
-  p.modal_text{
+  p.modal_text {
     font-size: 20px;
   }
 
-  .modal_gallery_all{
+  .modal_gallery_all {
     margin-top: 30px;
     width: 500px;
     height: 500px;
+  }*/
+} 
+
+
+@media screen and (max-height: 730px) {
+  #first_page{
+    min-height: 730px;
   }
-  
+
+  #second_page{
+    min-height: 730px;
+  }
+
+  #third_page {
+    min-height: 730px;
+  }
+
+  #fourth_page {
+    min-height: 730px;
+  }
+
+  #fifth_page {
+    min-height: 730px;
+  }
+
+  #sixth_page {
+    min-height: 730px;
+  }
+
+  #seventh_page {
+    min-height: 730px;
+  }
 }
