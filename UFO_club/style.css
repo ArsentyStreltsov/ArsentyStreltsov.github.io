@@ -9,6 +9,10 @@ body {
   width: 100%;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 :root {
   --main-color: #10396d;
 
@@ -178,6 +182,19 @@ body {
   width: 960px;
 }
 
+.second_page_heading.element_animation {
+  opacity: 0;
+  transition: opacity 0.9s ease-in-out, transform 0.9s ease-in-out;
+}
+
+.second_page_heading.element_animation.element_show {
+  opacity: 1;
+  transform: scale(1);
+  -ms-transform: scale(1);
+  -webkit-transform: scale(1);
+}
+
+
 .second_page h1 {
   font-family: var(--font-family);
   color: var(--main-color);
@@ -204,6 +221,135 @@ body {
   align-items: center;
   justify-content: space-between;
 }
+
+/* .card_1.element_animation,
+.card_2.element_animation,
+.card_3.element_animation,
+.card_4.element_animation,
+.card_5.element_animation,
+.card_6.element_animation {
+  opacity: 0;
+  transition: opacity 0.9s ease-in-out, transform 0.9s ease-in-out;
+}
+
+.card_1.element_animation.element_show,
+.card_2.element_animation.element_show,
+.card_3.element_animation.element_show,
+.card_4.element_animation.element_show,
+.card_5.element_animation.element_show,
+.card_6.element_animation.element_show {
+  opacity: 1;
+  transform: scale(1);
+  -ms-transform: scale(1);
+  -webkit-transform: scale(1);
+} */
+
+
+#card_1.element_animation {
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out, transform 0.2s ease-in-out;
+}
+
+#card_1.element_animation.element_show {
+  opacity: 1;
+  transform: scale(1);
+  -ms-transform: scale(1);
+  -webkit-transform: scale(1);
+  -webkit-transition-delay: 0.25s;
+  -o-transition-delay: 0.25s;
+  transition-delay: 0.25s;
+}
+
+
+
+#card_2.element_animation {
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out, transform 0.2s ease-in-out;
+}
+
+#card_2.element_animation.element_show {
+  opacity: 1;
+  transform: scale(1);
+  -ms-transform: scale(1);
+  -webkit-transform: scale(1);
+  -webkit-transition-delay: 0.5s;
+  -o-transition-delay: 0.5s;
+  transition-delay: 0.5s;
+}
+
+
+
+#card_3.element_animation {
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out, transform 0.2s ease-in-out;
+}
+
+#card_3.element_animation.element_show {
+  opacity: 1;
+  transform: scale(1);
+  -ms-transform: scale(1);
+  -webkit-transform: scale(1);
+  -webkit-transition-delay: 0.75s;
+  -o-transition-delay: 0.75s;
+  transition-delay: 0.75s;
+}
+
+
+
+#card_4.element_animation {
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out, transform 0.2s ease-in-out;
+}
+
+#card_4.element_animation.element_show {
+  opacity: 1;
+  transform: scale(1);
+  -ms-transform: scale(1);
+  -webkit-transform: scale(1);
+  -webkit-transition-delay: 1s;
+  -o-transition-delay: 1s;
+  transition-delay: 1s;
+}
+
+
+
+#card_5.element_animation {
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out, transform 0.2s ease-in-out;
+}
+
+#card_5.element_animation.element_show {
+  opacity: 1;
+  transform: scale(1);
+  -ms-transform: scale(1);
+  -webkit-transform: scale(1);
+  -webkit-transition-delay: 1.25s;
+  -o-transition-delay: 1.25s;
+  transition-delay: 1.25s;
+}
+
+
+
+#card_6.element_animation {
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out, transform 0.2s ease-in-out;
+}
+
+#card_6.element_animation.element_show {
+  opacity: 1;
+  transform: scale(1);
+  -ms-transform: scale(1);
+  -webkit-transform: scale(1);
+  -webkit-transition-delay: 1.5s;
+  -o-transition-delay: 1.5s;
+  transition-delay: 1.5s;
+}
+
+
+
+
+
+
 
 .cards_456 {
   width: 95%;
@@ -277,6 +423,19 @@ body {
   color: white;
   padding: 38px 0px 108px 0px;
 }
+
+.third_page_heading.element_animation {
+  opacity: 0;
+  transition: opacity 0.9s ease-in-out, transform 0.9s ease-in-out;
+}
+
+.third_page_heading.element_animation.element_show {
+  opacity: 1;
+  transform: scale(1);
+  -ms-transform: scale(1);
+  -webkit-transform: scale(1);
+}
+
 
 .hero__shots {
   width: 100%;
@@ -407,7 +566,7 @@ body {
   border-radius: 0;
   margin: 0 2px 0px 2px !important;
   transition: 200ms opacity;
-  background-color: white;
+  background-color: grey;
   position: relative;
 
 }
@@ -415,7 +574,6 @@ body {
 .swiper-pagination-bullet-active {
   opacity: 1;
   border: none;
-  background: none;
 }
 
 .swiper-pagination-bullet-active::after {
@@ -458,12 +616,58 @@ body {
   width: 590px;
   height: 248px;
   background-color: #0f396d;
+  padding: 85px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-direction: column;
-  padding: 85px;
 }
+
+.lng-fourthpage-heading.element_animation {
+  opacity: 0;
+  transform: translateY(100px);
+  -ms-transform: translateY(100px);
+  -webkit-transform: translateY(100px);
+}
+
+.lng-fourthpage-heading.element_animation.element_show {
+  opacity: 1;
+  transition: all 0.5s;
+  transform: translateY(0);
+  -ms-transform: translateY(0);
+  -webkit-transform: translateY(0);
+}
+
+.contact_details.element_animation {
+  opacity: 0;
+  transform: translateY(100px);
+  -ms-transform: translateY(100px);
+  -webkit-transform: translateY(100px);
+}
+
+.contact_details.element_animation.element_show {
+  opacity: 1;
+  transition: all 0.5s;
+  transform: translateY(0);
+  -ms-transform: translateY(0);
+  -webkit-transform: translateY(0);
+}
+
+.contact_links.element_animation {
+  opacity: 0;
+  transform: translateY(100px);
+  -ms-transform: translateY(100px);
+  -webkit-transform: translateY(100px);
+}
+
+.contact_links.element_animation.element_show {
+  opacity: 1;
+  transition: all 0.5s;
+  transform: translateY(0);
+  -ms-transform: translateY(0);
+  -webkit-transform: translateY(0);
+}
+
 
 .call_us_box h1{
   font-family: var(--font-family);
