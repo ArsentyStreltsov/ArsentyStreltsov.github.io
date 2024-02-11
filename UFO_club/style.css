@@ -1,0 +1,280 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0px;
+  padding: 0;
+  width: 100%;
+}
+
+:root {
+  --main-color: #10396d;
+
+  --font-family: "Jost", sans-serif;
+}
+
+
+/* -------- header --------*/
+
+
+.header_background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #f2f2f2;
+  z-index: -1;
+  opacity: 1;
+  transition: opacity 0.3s;
+}
+
+.header_container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  background-color: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+  transition: background-color 0.3s;
+}
+
+.logo_image {
+  width: 70px;
+  height: 70px;
+  margin-left: 40px;
+}
+
+.logo_image img{
+  width: 70px;
+  height: auto;
+}
+
+.language_buttons {
+  margin-right: 40px;
+}
+
+.both_language_buttons {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 15px;
+  color: var(--main-color);
+  background-color: transparent;
+  border: none;
+
+}
+
+.EN_language {
+  margin-right: 15px;
+}
+
+.RU_language {
+  margin-left: 15px;
+}
+
+
+/* -------- /header --------*/
+
+
+
+/* -------- first_page --------*/
+
+
+#first_page {
+  height: 100vh;  
+  min-height: 700px;
+  position: relative;
+  overflow: hidden;
+  width: 100vw;
+  background-color: #0e396d;
+  display: flex;
+  justify-content: center;
+}
+
+.first_page_overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0) 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ufo_photo {
+  width: 940px;
+  height: 779px;
+  margin-top: 65px;
+  background: url('media/first_page_photo/UFO_main_photo.png') no-repeat center center;
+  background-size: 155%;
+}
+
+.centered_content {
+  position: absolute;
+  top: 78%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+
+.centered_content h3 {
+  font-family: var(--font-family);
+  font-weight: 300;
+  font-size: 14px;
+  letter-spacing: 2px;
+  margin-bottom: 40px;
+}
+
+.centered_content h1 {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 50px;
+  margin: 20px 0px 20px 0px;
+
+}
+
+.centered_content p {
+  font-family: var(--font-family);
+  font-weight: 200;
+  font-size: 25px;
+  margin-top: 20px;
+  letter-spacing: 1.2px;
+}
+
+
+/* -------- /first_page --------*/
+
+
+
+/* -------- /second_page --------*/
+
+
+.second_page {
+  height: 890px;
+  background-color: #f2f2f2;
+  padding: 45px 0px 0px 0px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.second_page_heading {
+  display: flex;
+  justify-content: center;
+  height: 140px;
+  width: 960px;
+}
+
+.second_page h1 {
+  font-family: var(--font-family);
+  color: var(--main-color);
+  font-size: 37px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+}
+
+
+.all_cards {
+  width: 1200px;
+  height: 630px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.cards_123 {
+  width: 95%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cards_456 {
+  width: 95%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card {
+  width: 300px;
+  min-height: 260px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  margin: 0px 10px 0px 10px;
+}
+
+.cards_text {
+  min-height: 132px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card img {
+  width: 80px;
+  margin-bottom: 25px;
+}
+
+.card h2 {
+  font-family: var(--font-family);
+  color: var(--main-color);
+  font-size: 29px;
+  font-weight: 500;
+  padding: 0px 20px 0px 20px;
+  line-height: 30px;
+}
+
+.card p {
+  width: 310px;
+  font-family: var(--font-family);
+  color: var(--main-color);
+  font-weight: 200;
+  font-size: 17px;
+  padding: 0px 20px 0px 20px;
+}
+
+
+/* -------- /second_page --------*/
+
+
+
+/* -------- third_page --------*/
+
+.third_page {
+  height: 900px;
+  background-color: #0b2447;
+  display: flex;
+  justify-content: center;
+}
+
+.third_page_heading h1{
+  font-family: var(--font-family);
+  font-size: 42px;
+  font-weight: 600;
+  color: white;
+  padding: 38px 0px 108px 0px;
+}
+
+
+/* -------- /third_page --------*/
