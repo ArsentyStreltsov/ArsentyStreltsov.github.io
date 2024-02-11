@@ -5,122 +5,370 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>UFO club</title>
 
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
   <link rel="stylesheet" href="style.css">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Jost:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
 
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
 </head>
 
 
 <body>
 
-<header>
-  <div class="header_container">
-    <div class="header_background"></div>
+  <header>
+    <div class="header_container">
+      <div class="header_background"></div>
 
-    <a class="logo_image" href="#first_page">
-      <img src="media/header_photo/logo_image.png" alt="logo_image">
-    </a>
+      <a class="logo_image" href="#first_page">
+        <img src="media/header_photo/logo_image.png" alt="logo_image">
+      </a>
 
-    <div class="language_buttons">
-      <button class="EN_language both_language_buttons">EN</button>      
-      <button class="RU_language both_language_buttons">RU</button>
+      <div class="language_buttons">
+        
+        <button class="EN_language both_language_buttons">EN</button>      
+        <button class="RU_language both_language_buttons">RU</button>
+      </div>
     </div>
-  </div>
-</header>
+  </header>
 
 
-<main>
-  <div id="first_page">
-    <div class="ufo_photo">
-    <div class="first_page_overlay"></div>      
-      <div class="centered_content">
-        <h3>VIP TRAVEL</h3>
-        <h1>UFO CLUB</h1>
-        <p>Your journey is our handmade work</p>
-      </div>      
-    </div>
-  </div>
-
-
-  <div class="second_page">
-    <div class="second_page_heading">
-      <h1>Что мы предлагаем</h1>      
+  <main>
+    <div id="first_page">
+      <div class="ufo_photo">
+      <div class="first_page_overlay"></div>      
+        <div class="centered_content">
+          <h3>VIP TRAVEL</h3>
+          <h1>UFO CLUB</h1>
+          <p>Your journey is our handmade work</p>
+        </div>      
+      </div>
     </div>
 
-    <div class="all_cards">
-      <div class="cards_123">
-        <div class="card">
-          <img src="media/second_page_photos/travel-insurance.png" alt="travel-insurance">
-          <div class="cards_text">
-            <h2>Индивидуальные программы</h2>
-            <p>Мы полностью делаем программу, опираясь на ваши предпочтения</p>            
-          </div>
-        </div>
 
-        <div class="card">
-          <img src="media/second_page_photos/sunbed.png" alt="sunbed">
-          <div class="cards_text">
-            <h2>Отели</h2>
-            <p>Мы сотрудничаем с лучшими отелями мира и сделаем ваше пребывание там максимально комфортным</p>
-          </div>  
-        </div>
-
-        <div class="card">
-          <img src="media/second_page_photos/plane.png" alt="plane">
-          <div class="cards_text">
-            <h2>Частные самолёты</h2>
-            <p>Мы бронируем частные самолёты, а также фаст-треки и прочие удобства в аэропорту</p>
-          </div>  
-        </div>
+    <div class="second_page">
+      <div class="second_page_heading">
+        <h1>Что мы предлагаем</h1>      
       </div>
 
-      <div class="cards_456">
-        <div class="card">
-          <img src="media/second_page_photos/documents.png" alt="documents">
-          <div class="cards_text">
-            <h2>Документы</h2>
-            <p>Мы берём на себя все заботы касательно документов: визы, регистрации и остальное</p>
+      <div class="all_cards">
+        <div class="cards_123">
+          <div class="card">
+            <img src="media/second_page_photos/travel-insurance.png" alt="travel-insurance">
+            <div class="cards_text">
+              <h2>Индивидуальные программы</h2>
+              <p>Мы полностью делаем программу, опираясь на ваши предпочтения</p>            
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="media/second_page_photos/sunbed.png" alt="sunbed">
+            <div class="cards_text">
+              <h2>Отели</h2>
+              <p>Мы сотрудничаем с лучшими отелями мира и сделаем ваше пребывание там максимально комфортным</p>
+            </div>  
+          </div>
+
+          <div class="card">
+            <img src="media/second_page_photos/plane.png" alt="plane">
+            <div class="cards_text">
+              <h2>Частные самолёты</h2>
+              <p>Мы бронируем частные самолёты, а также фаст-треки и прочие удобства в аэропорту</p>
+            </div>  
           </div>
         </div>
-        
-        <div class="card">
-          <img src="media/second_page_photos/restaurant.png" alt="restaurant">
-          <div class="cards_text">
-            <h2>Рестораны</h2>
-            <p>Мы знаем, насколько важно получить гастрономическое удовольствие, поэтому посоветуем вам проверенные рестораны</p>
+
+        <div class="cards_456">
+          <div class="card">
+            <img src="media/second_page_photos/documents.png" alt="documents">
+            <div class="cards_text">
+              <h2>Документы</h2>
+              <p>Мы берём на себя все заботы касательно документов: визы, регистрации и остальное</p>
+            </div>
+          </div>
+          
+          <div class="card">
+            <img src="media/second_page_photos/restaurant.png" alt="restaurant">
+            <div class="cards_text">
+              <h2>Рестораны</h2>
+              <p>Мы знаем, насколько важно получить гастрономическое удовольствие, поэтому посоветуем вам проверенные рестораны</p>
+            </div>
+          </div>
+          
+          <div class="card">
+            <img src="media/second_page_photos/map.png" alt="map">
+            <div class="cards_text">
+              <h2>Гиды</h2>
+              <p>Мы обеспечим вам погружение в историю, культуру и природу, сотрудничая с лучшими гидами</p>
+            </div>
           </div>
         </div>
-        
-        <div class="card">
-          <img src="media/second_page_photos/map.png" alt="map">
-          <div class="cards_text">
-            <h2>Гиды</h2>
-            <p>Мы обеспечим вам погружение в историю, культуру и природу, сотрудничая с лучшими гидами</p>
+
+      </div>
+    </div>
+
+
+    <div class="third_page">
+      <div class="third_page_heading">
+        <h1>Наша галерея</h1>
+      </div>
+
+
+      <div class="latest-shots hero__shots">
+        <div class="latest-shots__content">
+          <div class="swiper" id="gallery">
+            <div class="latest-shots__nav buttons">
+              <button class="btn-reset latest-shots__btn latest-shots__btn--left" aria-label="Slide left" id="gallery-prev">
+                <i class="fa-solid fa-chevron-left left_button" style="color: #0b2447;"></i>
+              </button>
+
+              <button class="btn-reset latest-shots__btn latest-shots__btn--right" aria-label="Slide right" id="gallery-next">
+                <i class="fa-solid fa-chevron-right right_button" style="color: #0b2447; border-radius: 50%;"></i>
+              </button>
+            </div>
+            
+            <div class="swiper-wrapper">
+      
+              <!-- Первый слайд -->
+              <div class="swiper-slide">
+                <div class="third_page_overlay"></div>
+
+                <figure class="latest-shots__link card_left_bottom" width="320" aria-label="Go to shot">
+
+                  <img src="media/third_page_photos/1_new_zealand_1.jpeg" width="320" height="570" loading="lazy" alt="1_new_zealand_1" class="latest-shots__image">
+                  <figcaption>Новая Зеландия</figcaption>
+
+                </figure>
+              </div>
+              <!-- Второй слайд -->
+              <div class="swiper-slide">
+                <div class="third_page_overlay"></div>
+
+                <figure class="latest-shots__link card_left_top" width="320" aria-label="Go to shot">
+                
+                  <img src="media/third_page_photos/2_italy_1.jpeg" width="320" height="570" loading="lazy" alt="2_italy_1"
+                    class="latest-shots__image">
+                  <figcaption>Италия</figcaption>
+                
+                </figure>
+              </div>
+              <!-- Третий слайд -->
+              <div class="swiper-slide">
+                <div class="third_page_overlay"></div>
+
+                <figure class="latest-shots__link card_left_bottom" width="320" aria-label="Go to shot">
+                
+                  <img src="media/third_page_photos/3_cambodia.jpeg" width="320" height="570" loading="lazy" alt="3_cambodia"
+                    class="latest-shots__image">
+                  <figcaption>Камбоджа</figcaption>
+                
+                </figure>
+              </div>
+              <!-- Четвертый слайд -->
+              <div class="swiper-slide">
+                <div class="third_page_overlay"></div>
+
+                <figure class="latest-shots__link card_left_top" width="320" aria-label="Go to shot">
+                
+                  <img src="media/third_page_photos/4_japan.jpeg" width="320" height="570" loading="lazy" alt="4_japan"
+                    class="latest-shots__image">
+                  <figcaption>Япония</figcaption>
+                
+                </figure>
+              </div>
+              <!-- Пятый слайд -->
+              <div class="swiper-slide">
+                <div class="third_page_overlay"></div>
+
+                <figure class="latest-shots__link card_left_bottom" width="320" aria-label="Go to shot">
+                
+                  <img src="media/third_page_photos/5_new_zealand_2.jpeg" width="320" height="570" loading="lazy" alt="5_new_zealand_2"
+                    class="latest-shots__image">
+                  <figcaption>Новая Зеландия</figcaption>
+                
+                </figure>
+              </div>
+              <!-- Шестой слайд -->
+              <div class="swiper-slide">
+                <div class="third_page_overlay"></div>
+                <figure class="latest-shots__link card_center" width="320" aria-label="Go to shot">
+                
+                  <img src="media/third_page_photos/6_uae.jpeg" width="320" height="570" loading="lazy" alt="6_uae"
+                    class="latest-shots__image">
+                  <figcaption>ОАЭ</figcaption>
+                
+                </figure>
+              </div>
+              <!-- Первый слайд -->
+              <div class="swiper-slide">
+                <div class="third_page_overlay"></div>
+
+                <figure class="latest-shots__link card_right_bottom" width="320" aria-label="Go to shot">
+                
+                  <img src="media/third_page_photos/7_greece.jpeg" width="320" height="570" loading="lazy" alt="7_greece"
+                    class="latest-shots__image">
+                  <figcaption>Греция</figcaption>
+                
+                </figure>
+              </div>
+              <!-- Второй слайд -->
+              <div class="swiper-slide">
+                <div class="third_page_overlay"></div>
+
+                <figure class="latest-shots__link card_left_bottom" width="320" aria-label="Go to shot">
+                
+                  <img src="media/third_page_photos/8_italy_2.jpeg" width="320" height="570" loading="lazy" alt="8_italy_2"
+                    class="latest-shots__image">
+                  <figcaption>Италия</figcaption>
+                
+                </figure>
+              </div>
+              <!-- Третий слайд -->
+              <div class="swiper-slide">
+                <div class="third_page_overlay"></div>
+
+                <figure class="latest-shots__link card_right_bottom" width="320" aria-label="Go to shot">
+                
+                  <img src="media/third_page_photos/9_turkey.jpeg" width="320" height="570" loading="lazy" alt="9_turkey"
+                    class="latest-shots__image">
+                  <figcaption>Турция</figcaption>
+                
+                </figure>
+              </div>
+              <!-- Четвертый слайд -->
+              <div class="swiper-slide">
+                <div class="third_page_overlay"></div>
+
+                <figure class="latest-shots__link card_left_top" width="320" aria-label="Go to shot">
+                
+                  <img src="media/third_page_photos/10_new_zealand_3.jpeg" width="320" height="570" loading="lazy" alt="10_new_zealand_3"
+                    class="latest-shots__image">
+                  <figcaption >Новая Зеландия</figcaption>
+                
+                </figure>
+              </div>
+              <!-- Пятый слайд -->
+              <div class="swiper-slide">
+                <div class="third_page_overlay"></div>
+
+                <figure class="latest-shots__link card_left_top" width="320" aria-label="Go to shot">
+                
+                  <img src="media/third_page_photos/11_qatar.jpeg" width="320" height="570" loading="lazy" alt="11_qatar"
+                    class="latest-shots__image">
+                  <figcaption>Катар</figcaption>
+                
+                </figure>
+              </div>
+              <!-- Шестой слайд -->
+              <div class="swiper-slide">
+                <div class="third_page_overlay"></div>
+
+                <figure class="latest-shots__link card_center" width="320" aria-label="Go to shot">
+                
+                  <img src="media/third_page_photos/12_france.jpeg" width="320" height="570" loading="lazy" alt="12_france"
+                    class="latest-shots__image">
+                  <figcaption>Франция</figcaption>
+                
+                </figure>
+              </div>
+              <!-- Третий слайд -->
+              <div class="swiper-slide">
+                <div class="third_page_overlay"></div>
+
+                <figure class="latest-shots__link card_left_bottom" width="320" aria-label="Go to shot">
+                
+                  <img src="media/third_page_photos/13_kamchatka.jpeg" width="320" height="570" loading="lazy" alt="13_kamchatka"
+                    class="latest-shots__image">
+                  <figcaption>Камчатка</figcaption>
+                
+                </figure>
+              </div>
+              <!-- Четвертый слайд -->
+              <div class="swiper-slide">
+                <div class="third_page_overlay"></div>
+
+                <figure class="latest-shots__link card_right_top" width="320" aria-label="Go to shot">
+                
+                  <img src="media/third_page_photos/14_tanzania.jpeg" width="320" height="570" loading="lazy" alt="14_tanzania"
+                    class="latest-shots__image">
+                  <figcaption>Танзания</figcaption>
+                
+                </figure>
+              </div>
+              <!-- Пятый слайд -->
+              <div class="swiper-slide">
+                <div class="third_page_overlay"></div>
+
+                <figure class="latest-shots__link card_left_top" width="320" aria-label="Go to shot">
+                
+                  <img src="media/third_page_photos/15_italy_3.jpeg" width="320" height="570" loading="lazy" alt="15_italy_3"
+                    class="latest-shots__image">
+                  <figcaption>Италия</figcaption>
+                
+                </figure>
+              </div>
+              <!-- Шестой слайд -->
+              <div class="swiper-slide">
+                <div class="third_page_overlay"></div>
+
+                <figure class="latest-shots__link card_center" width="320" aria-label="Go to shot">
+                
+                  <img src="media/third_page_photos/16_morocco.jpeg" width="320" height="570" loading="lazy" alt="16_morocco"
+                    class="latest-shots__image">
+                  <figcaption>Марокко</figcaption>
+                
+                </figure>
+
+              </div>
+            </div>
+
+            <div class="swiper-pagination"></div>
+
           </div>
         </div>
       </div>
-
-    </div>
-  </div>
-
-
-  <div class="third_page">
-    <div class="third_page_heading">
-      <h1>Наша галерея</h1>
     </div>
 
-  </div>
+
+    <div class="fourth_page">
+      <div class="call_us_box">
+
+        <h1>Свяжитесь с нами:</h1>
+        <div class="contact_details">
+          <a class="email" href="mailto:ufo.club.me@gmail.com">ufo.club.me@gmail.com</a>
+          <p class="adress">Novi bulevar 1, Bar 85000, Montenegro</p>        
+        </div>
 
 
-</main>
+        <div class="contact_links">
+          <a href="https://www.instagram.com/olga.ufo/?igshid=NTc4MTIwNjQ2YQ%3D%3D" target="_blank">
+            <i class="fa-brands fa-instagram" style="color: #ffffff;"></i>
+          </a>
+        
+          <a href="https://t.me/olga_ufo" target="_blank">
+            <img class="fa-brands fa-telegram" alt="svgImg"
+              src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iNTAiIGhlaWdodD0iNTAiIHZpZXdCb3g9IjAsMCwyNTYsMjU2IgpzdHlsZT0iZmlsbDojMDAwMDAwOyI+CjxnIGZpbGw9IiNmZmZmZmYiIGZpbGwtcnVsZT0ibm9uemVybyIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIHN0cm9rZS1saW5lY2FwPSJidXR0IiBzdHJva2UtbGluZWpvaW49Im1pdGVyIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiIHN0cm9rZS1kYXNoYXJyYXk9IiIgc3Ryb2tlLWRhc2hvZmZzZXQ9IjAiIGZvbnQtZmFtaWx5PSJub25lIiBmb250LXdlaWdodD0ibm9uZSIgZm9udC1zaXplPSJub25lIiB0ZXh0LWFuY2hvcj0ibm9uZSIgc3R5bGU9Im1peC1ibGVuZC1tb2RlOiBub3JtYWwiPjxnIHRyYW5zZm9ybT0ic2NhbGUoNS4xMiw1LjEyKSI+PHBhdGggZD0iTTI1LDJjLTEyLjY5MDcxLDAgLTIzLDEwLjMwOTMgLTIzLDIzYzAsMTIuNjkwNyAxMC4zMDkyOSwyMyAyMywyM2MxMi42OTA3MSwwIDIzLC0xMC4zMDkzIDIzLC0yM2MwLC0xMi42OTA3IC0xMC4zMDkyOSwtMjMgLTIzLC0yM3pNMjUsNGMxMS42MDk4MywwIDIxLDkuMzkwMTcgMjEsMjFjMCwxMS42MDk4MyAtOS4zOTAxNywyMSAtMjEsMjFjLTExLjYwOTgzLDAgLTIxLC05LjM5MDE3IC0yMSwtMjFjMCwtMTEuNjA5ODIgOS4zOTAxNywtMjEgMjEsLTIxek0zNC4wODc4OSwxNC4wMzUxNmMtMC42ODQsMCAtMS40NTI1NiwwLjE1ODQyIC0yLjM1MTU2LDAuNDgyNDJjLTEuMzk2LDAuNTAzIC0xNy44MTU1OSw3LjQ3NDU4IC0xOS42ODM1OSw4LjI2NzU4Yy0xLjA2OCwwLjQ1NCAtMy4wNTY2NCwxLjI5ODUgLTMuMDU2NjQsMy4zMTI1YzAsMS4zMzUgMC43ODIyNywyLjI4OTg0IDIuMzIyMjcsMi44Mzk4NGMwLjgyOCwwLjI5NSAyLjc5NDU1LDAuODkxMDggMy45MzU1NSwxLjIwNTA4YzAuNDg0LDAuMTMzIDAuOTk4MzQsMC4yMDExNyAxLjUyNzM0LDAuMjAxMTdjMS4wMzUsMCAyLjA3NjU4LC0wLjI1Nzg5IDIuODkyNTgsLTAuNzEyODljLTAuMDA3LDAuMTY4IC0wLjAwMjQyLDAuMzM3ODEgMC4wMTc1OCwwLjUwNzgxYzAuMTIzLDEuMDUgMC43NzA0NywyLjAzNzU4IDEuNzMwNDcsMi42NDI1OGMwLjYyOCwwLjM5NiA1Ljc1NzQ0LDMuODMyOTEgNi41MjM0NCw0LjM3ODkxYzEuMDc2LDAuNzY5IDIuMjY1NSwxLjE3NTc4IDMuNDM3NSwxLjE3NTc4YzIuMjQsMCAyLjk5MTUyLC0yLjMxMjgzIDMuMzUzNTIsLTMuNDIzODNjMC41MjUsLTEuNjEzIDIuNDkwODksLTE0LjcyOTk3IDIuNzEyODksLTE3LjA0Mjk3YzAuMTUxLC0xLjU4NSAtMC41MDk1OCwtMi44OTAxOSAtMS43Njc1OCwtMy40OTIxOWMtMC40NzEsLTAuMjI3IC0xLjAwODc1LC0wLjM0MTggLTEuNTkzNzUsLTAuMzQxOHpNMzQuMDg3ODksMTYuMDM1MTZjMC4yNzUsMCAwLjUyMDUyLDAuMDQ1NDggMC43Mjg1MiwwLjE0NjQ4YzAuNDczLDAuMjI3IDAuNzEzNjMsMC43MzMwNSAwLjY0MDYzLDEuNDk4MDVjLTAuMjQyLDIuNTIzIC0yLjIwMzA5LDE1LjMyOTI4IC0yLjYyMTA5LDE2LjYxMzI4Yy0wLjM1OCwxLjA5OCAtMC43MzUxMiwyLjA0Mjk3IC0xLjQ1MzEzLDIuMDQyOTdjLTAuNzE4LDAgLTEuNTAyMzksLTAuMjUxNjkgLTIuMjc1MzksLTAuODA0NjljLTAuNzczLC0wLjU1MiAtNS45MDYxNCwtMy45OTQzNiAtNi42MTkxNCwtNC40NDMzNmMtMC42MjUsLTAuMzk0IC0xLjI4NjQ3LC0xLjM3NjE3IC0wLjM1NTQ3LC0yLjMyNjE3YzAuNzY3LC0wLjc4MiA2LjU4NTAzLC02LjQyODc4IDcuMDgyMDMsLTYuOTI1NzhjMC4zNywtMC4zNzEgMC4xOTY5OCwtMC44MTgzNiAtMC4xNjYwMiwtMC44MTgzNmMtMC4xMjUsMCAtMC4yNzQ2OSwwLjA1MjY5IC0wLjQyOTY5LDAuMTc5NjljLTAuNjA4LDAuNDk3IC05LjA4NDM2LDYuMTY5IC05LjgxODM2LDYuNjI1Yy0wLjQ4NiwwLjMwMiAtMS4yMzg1MywwLjUxOTUzIC0yLjAxOTUzLDAuNTE5NTNjLTAuMzMzLDAgLTAuNjcwMTQsLTAuMDM5OTEgLTAuOTk0MTQsLTAuMTI4OTFjLTEuMTI4LC0wLjMxMSAtMy4wMzY5MiwtMC44OTAxNiAtMy43OTQ5MiwtMS4xNjAxNmMtMC43MjksLTAuMjYgLTAuOTk0MTQsLTAuNTA5MDggLTAuOTk0MTQsLTAuOTU1MDhjMCwtMC42MzQgMC44OTQ4OSwtMS4wNzE2NiAxLjgzNzg5LC0xLjQ3MjY2YzAuOTk2LC0wLjQyMyAxOC4yMzAxMiwtNy43NDE1NiAxOS41NzgxMiwtOC4yMjY1NmMwLjYyNCwtMC4yMjYgMS4xOTQ4MywtMC4zNjMyOCAxLjY3MzgzLC0wLjM2MzI4eiI+PC9wYXRoPjwvZz48L2c+Cjwvc3ZnPg==" />
+          </a>
+        
+          <a href="https://api.whatsapp.com/send/?phone=79859604351&text&type=phone_number&app_absent=0" target="_blank">
+            <i class="fa-brands fa-whatsapp" style="color: #ffffff;"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </main>
 
 
-<footer>
+  <footer>
 
-</footer>
+  </footer>
 
   <script src="script.js"></script>
 
