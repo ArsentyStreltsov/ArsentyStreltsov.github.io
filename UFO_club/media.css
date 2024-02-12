@@ -1,5 +1,466 @@
 
+@media screen and (max-width: 1200px){
+  /* header */
+  .logo_image {
+    margin-left: 20px;
+  }
 
-@media screen and (min-width: 1120px) and (max-width: 1215px) {
+  .language_buttons {
+    margin-right: 20px;
+  }
+
+  /* second page */
+
+  .second_page{
+    padding-top: 90px;
+  }
+
+  .all_cards {
+    width: 960px;
+  }
+
+  .cards_123 {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .cards_456 {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .cards_text h2 {
+    width: 260px;
+    font-size: 27px;
+  }
+
+  .cards_text p {
+    width: 260px;
+    font-size: 15px;
+  }
+
+  /* third page */
+
+  .third_page {
+    height: 1050px;
+  }
+
+  .latest-shots__link img {
+    width: 390px;
+    height: 692px;
+  }
+
+  .third_page_overlay {
+    width: 390px;
+    height: 692px;
+  }
+
+  .swiper-slide {
+    transform: scale(0.85);
+  }
+
+  .swiper-slide-active {
+    transform: scale(1);
+  }
+
+  /* fourth page */
+
+  .fourth_page {
+    height: 554px;
+  }
+
+  .call_us_box {
+    width: 450px;
+    height: 243px;
+    padding: 80px 85px 85px 85px;
+  }
+
+  .call_us_box h1 {
+    font-size: 34px;
+  }
+
+  .contact_details a {
+    font-size: 15px;
+  }
+
+  .contact_details p {
+    font-size: 15px;
+    letter-spacing: 0.8px;
+  }
+}
+
+@media screen and (max-width: 960px) {
+
+  html {
+    width: 100%;
+  }
+
+  .burger_menu_container {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    height: 24px;
+    width: calc(100% - 40px);
+    background-color: #0e396d;
+    background: (0, 0, 0, 0.3);
+    padding: 20px;
+
+  }
+
+  .header_container {
+    display: none;
+  }
+
+  .nav {
+    width: 100%;
+    height: auto;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    transition: transform 0.3s ease-in-out, visibility 0.3s ease-in-out;
+    transform: translateX(100%);
+    visibility: hidden;
+  }
+
+  .logo_image {
+    top: 0px;
+    margin: 0px;
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .logo_image img {
+    padding: 20px 0px;
+  }
+
+  .language_buttons {
+    gap: 20px;
+    margin: 20px 0px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .EN_language {
+    margin: 0px;
+    padding-top: 10px;
+  }
+
+  .RU_language {
+    margin: 0px;
+    padding-bottom: 10px;
+  }
+
+  .nav--active {
+    position: relative;
+    transform: none;
+    visibility: visible;
+  }
+
+  .burger {
+    position: relative;
+    display: block;
+    width: 28px;
+    height: 20px;
+    z-index: 10000;
+    background: transparent;
+    border: none;
+  }
+
+  .burger__line {
+    position: absolute;
+    right: 0;
+    width: 28px;
+    height: 3px;
+    background-color: white;
+    transition: transform 0.3s ease-in-out, top 0.3s ease-in-out;
+  }
+
+  .burger__line:first-child {
+    top: 0;
+  }
+
+  .burger__line:last-child {
+    top: calc(100% - 2px);
+  }
+
+  .burger__line:nth-child(2) {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .burger--active .burger__line:nth-child(2) {
+    transform: scale(0);
+  }
+
+  .burger--active .burger__line:first-child {
+    top: 50%;
+    transform: rotate(45deg);
+  }
+
+  .burger--active .burger__line:last-child {
+    top: 50%;
+    transform: rotate(-45deg);
+  }
+
+  .ufo_photo {
+    width: 760px;
+    height: auto;
+  }
+
+  #first_page {
+    height: 100vh;
+    min-height: 840px;
+  }
+
+  .centered_content {
+    margin-bottom: 80px;
+  }
+
+  .centered_content h3 {
+    font-size: 13px;
+  }
+
+  .centered_content h1 {
+    font-size: 46px;
+  }
+
+  .centered_content p {
+    font-size: 22px;
+  }
+
+  .second_page {
+    height: 1650px;
+    padding: 60px 0px 135px 0px;
+  }
+
+  .second_page_heading {
+    height: 120px;
+  }
+
+  .second_page_heading h1 {
+    font-size: 34px;
+    font-weight: 500;
+  }
+
+  .all_cards {
+    gap: 60px;
+  }
+
+  .cards_123 {
+    flex-direction: column;
+    justify-content: space-around;
+    height: 750px;
+    gap: 60px;
+    width: auto;
+  }
+
+  .cards_456 {
+    width: auto;
+    flex-direction: column;
+    height: 750px;
+    gap: 60px;
+  }
+
+  .card {
+    width: auto;
+    height: 200px !important;
+    min-height: 200px;
+    justify-content: space-between;
+  }
+
+  .cards_text {
+    height: 70px !important;
+    min-height: 78px;
+  }
+
+  .cards_text h2 {
+    width: 550px;
+  }
+
+  .cards_text p {
+    width: 550px;
+  }
+  
+
+  .third_page {
+    height: 700px;
+  }
+
+  .third_page_heading {
+    display: none;
+  }
+
+  .swiper-slide {
+    transform: none;
+  }
+
+  .swiper-slide-active {
+    transform: none;
+  }
+
+  #gallery {
+    width: 100%;
+    height: 700px;
+  }
+
+  .third_page_overlay {
+    width: 100%;
+    height: 100%;
+    border-radius: 0px;
+  }
+
+  .latest-shots__image {
+    border-radius: 0px;
+    width: 960px !important;
+    min-height: 700px;
+    object-fit: cover;
+  }
+
+
+  .hero__shots,
+  .swiper {
+    width: 100%;
+    height: 700px;
+    /* Устанавливаем высоту блока и свайпера */
+  }
+
+  .swiper-wrapper,
+  .swiper-slide {
+    height: 700px;
+    width: 100% !important;
+    /* Убеждаемся, что слайды тоже имеют высоту 700px */
+  }
+
+  .swiper-slide img {
+    width: 100% !important;
+    height: 700px;
+    /* Устанавливаем картинкам нужные размеры */
+    object-fit: cover;
+    /* Убедитесь, что картинки красиво заполняют блок */
+  }
+
+  .swiper {
+    position: relative;
+  }
+
+  .swiper-pagination {
+    width: 100%;
+    position: absolute;
+    top: 0px !important;
+    left: 0 !important;
+    bottom: none;
+    z-index: 100;
+    margin-top: 22px;
+  }
+
+  .swiper-pagination-bullet {
+    width: calc(88%/16);
+  }
+
+  .card_left_top figcaption {
+    margin-top: 30px;
+  }
+
+  .card_right_top figcaption {
+    margin-top: 30px;
+  }
+
+  .latest-shots__btn--left,
+  .latest-shots__btn--right {
+    width: 200px;
+    height: 100%;
+    background-color: transparent;
+    position: absolute;
+    z-index: 100;
+  }
+
+  .latest-shots__btn--left .fa-chevron-left,
+  .latest-shots__btn--right .fa-chevron-right {
+    display: none;
+  }
+
+  #gallery-next {
+    top: 0;
+    right: 0;
+  }
+
+  #gallery-prev {
+    top: 0;
+    left: 0;
+  }
+  .swiper-slide figcaption {
+  position: absolute;
+  bottom: 0;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 23px;
+  color: white;
+  padding: 35px 26px 35px 26px;
+  z-index: 10;
+  }
+
+  .swiper-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+  }
+
+  .second_page_heading {
+    width: 100%;
+  }
+
+  .cards_123 {
+    width: 100% !important;
+  }
+
+  .cards_456 {
+    width: 100% !important;
+  }
+
+  .card {
+    width: 100% !important;
+    margin: 0px;
+  }
+
+  .card_1 img {
+    left: 20px;
+  }
+
+  .all_cards {
+    width: 100%;
+  }
+
+  .cards_text {
+    width: 100%;
+  }
+
+  .cards_text h2 {
+    width: calc(100% - 20px) !important;
+    padding: 0px;
+  }
+
+  .cards_text p {
+    width: calc(100% - 20px) !important;
+    padding: 0px;
+  }
+
+  .call_us_box {
+    width: 90%;
+    padding: 10px;
+  }
+
+
+}
+
+
+@media screen and (max-width: 960px) {
 
 }

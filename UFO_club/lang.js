@@ -8,7 +8,7 @@ const langArr = {
     "en": "UFO CLUB",
   },
   "lng-firstpage-paragraph": {
-    "ru": "Каждая поезда — ручная работа",
+    "ru": "Каждая поездка — ручная работа",
     "en": "Your journey is our handmade work",
   },
   "lng-secondpage-heading": {

@@ -22,6 +22,9 @@ html {
 
 /* -------- header --------*/
 
+.burger_menu_container {
+  display: none;
+}
 
 .header_background {
   position: absolute;
@@ -47,6 +50,7 @@ html {
   align-items: center;
   z-index: 1000;
   transition: background-color 0.3s;
+  
 }
 
 .logo_image {
@@ -169,7 +173,7 @@ html {
 .second_page {
   height: 890px;
   background-color: #f2f2f2;
-  padding: 45px 0px 0px 0px;
+  padding: 90px 0px 0px 0px;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -194,7 +198,6 @@ html {
   -webkit-transform: scale(1);
 }
 
-
 .second_page h1 {
   font-family: var(--font-family);
   color: var(--main-color);
@@ -202,7 +205,6 @@ html {
   font-weight: 600;
   letter-spacing: 1.5px;
 }
-
 
 .all_cards {
   width: 1200px;
@@ -222,32 +224,9 @@ html {
   justify-content: space-between;
 }
 
-/* .card_1.element_animation,
-.card_2.element_animation,
-.card_3.element_animation,
-.card_4.element_animation,
-.card_5.element_animation,
-.card_6.element_animation {
-  opacity: 0;
-  transition: opacity 0.9s ease-in-out, transform 0.9s ease-in-out;
-}
-
-.card_1.element_animation.element_show,
-.card_2.element_animation.element_show,
-.card_3.element_animation.element_show,
-.card_4.element_animation.element_show,
-.card_5.element_animation.element_show,
-.card_6.element_animation.element_show {
-  opacity: 1;
-  transform: scale(1);
-  -ms-transform: scale(1);
-  -webkit-transform: scale(1);
-} */
-
-
 #card_1.element_animation {
   opacity: 0;
-  transition: opacity 0.2s ease-in-out, transform 0.2s ease-in-out;
+  transition: opacity 0.1s ease-in-out, transform 0.2s ease-in-out;
 }
 
 #card_1.element_animation.element_show {
@@ -255,12 +234,10 @@ html {
   transform: scale(1);
   -ms-transform: scale(1);
   -webkit-transform: scale(1);
-  -webkit-transition-delay: 0.25s;
-  -o-transition-delay: 0.25s;
-  transition-delay: 0.25s;
+  -webkit-transition-delay: 0.15s;
+  -o-transition-delay: 0.15s;
+  transition-delay: 0.15s;
 }
-
-
 
 #card_2.element_animation {
   opacity: 0;
@@ -272,12 +249,10 @@ html {
   transform: scale(1);
   -ms-transform: scale(1);
   -webkit-transform: scale(1);
-  -webkit-transition-delay: 0.5s;
-  -o-transition-delay: 0.5s;
-  transition-delay: 0.5s;
+  -webkit-transition-delay: 0.3s;
+  -o-transition-delay: 0.3s;
+  transition-delay: 0.3s;
 }
-
-
 
 #card_3.element_animation {
   opacity: 0;
@@ -289,12 +264,10 @@ html {
   transform: scale(1);
   -ms-transform: scale(1);
   -webkit-transform: scale(1);
-  -webkit-transition-delay: 0.75s;
-  -o-transition-delay: 0.75s;
-  transition-delay: 0.75s;
+  -webkit-transition-delay: 0.45s;
+  -o-transition-delay: 0.45s;
+  transition-delay: 0.45s;
 }
-
-
 
 #card_4.element_animation {
   opacity: 0;
@@ -306,12 +279,10 @@ html {
   transform: scale(1);
   -ms-transform: scale(1);
   -webkit-transform: scale(1);
-  -webkit-transition-delay: 1s;
-  -o-transition-delay: 1s;
-  transition-delay: 1s;
+  -webkit-transition-delay: 0.6s;
+  -o-transition-delay: 0.6s;
+  transition-delay: 0.6s;
 }
-
-
 
 #card_5.element_animation {
   opacity: 0;
@@ -323,12 +294,10 @@ html {
   transform: scale(1);
   -ms-transform: scale(1);
   -webkit-transform: scale(1);
-  -webkit-transition-delay: 1.25s;
-  -o-transition-delay: 1.25s;
-  transition-delay: 1.25s;
+  -webkit-transition-delay: 0.75s;
+  -o-transition-delay: 0.75s;
+  transition-delay: 0.75s;
 }
-
-
 
 #card_6.element_animation {
   opacity: 0;
@@ -340,16 +309,10 @@ html {
   transform: scale(1);
   -ms-transform: scale(1);
   -webkit-transform: scale(1);
-  -webkit-transition-delay: 1.5s;
-  -o-transition-delay: 1.5s;
-  transition-delay: 1.5s;
+  -webkit-transition-delay: 0.9s;
+  -o-transition-delay: 0.9s;
+  transition-delay: 0.9s;
 }
-
-
-
-
-
-
 
 .cards_456 {
   width: 95%;
@@ -435,7 +398,6 @@ html {
   -ms-transform: scale(1);
   -webkit-transform: scale(1);
 }
-
 
 .hero__shots {
   width: 100%;
@@ -555,18 +517,16 @@ html {
   text-align: center;
   position: relative;
   margin-top: 70px;
-  
 }
-
 
 .swiper-pagination-bullet {
   width: 31px;
-  height: 2px;
+  height: 2.5px;
   opacity: 0.5;
   border-radius: 0;
   margin: 0 2px 0px 2px !important;
   transition: 200ms opacity;
-  background-color: grey;
+  background-color: #FFFFFF80;
   position: relative;
 
 }

@@ -17,6 +17,20 @@ window.addEventListener('DOMContentLoaded', (event) => {
 
 
 
+
+
+// Бургер
+const burger = document.getElementById("burger")
+const nav = document.getElementById("nav")
+
+burger.addEventListener("click", function () {
+  nav.classList.toggle("nav--active")
+  burger.classList.toggle("burger--active")
+  document.body.classList.toggle("stop-scroll")
+})
+
+
+
 // свайпер
 
 const swiper = new Swiper('#gallery', {
@@ -37,16 +51,26 @@ const swiper = new Swiper('#gallery', {
     nextEl: '#gallery-next',
     prevEl: '#gallery-prev',
   },
-
   pagination: {
     el: '.swiper-pagination',
     clickable: true,
     type: 'bullets',
   },
-  autoplay: {
-    delay: 5000,
-    disableOnInteraction: false,
-  },
+
+  breakpoints: {
+    1270: {
+      slidesPerView: 4,
+    },
+    1152: {
+      slidesPerView: 3,
+    },
+    200: {
+      slidesPerView: 1,
+      spaceBetween: 0,
+      centeredSlides: false,
+
+    }
+  }
 });
 
 
@@ -108,39 +132,17 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
-// --------------------------------------------------
 
 
 // анимации
-
-// function onEntry(entry) {
-//   entry.forEach(change => {
-//     if (change.isIntersecting) {
-//       change.target.classList.add('element_show');
-//     } else {
-//       change.target.classList.remove('element_show');
-//     }
-//   });
-// }
-
-// let options = {
-//   threshold: [1]
-// };
-// let observer = new IntersectionObserver(onEntry, options);
-// let elements = document.querySelectorAll('.element_animation');
-
-
-// for (let elm of elements) {
-//   observer.observe(elm);
-// }
 
 function onEntry(entry) {
   entry.forEach(change => {
     if (change.isIntersecting) {
       change.target.classList.add('element_show');
-    } else {
-      change.target.classList.remove('element_show');
-    }
+    } //else {
+    //   change.target.classList.remove('element_show');
+    // }
   });
 }
 
