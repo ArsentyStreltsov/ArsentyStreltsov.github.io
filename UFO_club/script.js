@@ -58,10 +58,10 @@ const swiper = new Swiper('#gallery', {
   },
 
   breakpoints: {
-    1270: {
+    1300: {
       slidesPerView: 4,
     },
-    1152: {
+    1100: {
       slidesPerView: 3,
     },
     200: {

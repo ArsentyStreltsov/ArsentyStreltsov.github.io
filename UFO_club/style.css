@@ -144,6 +144,7 @@ html {
   font-size: 14px;
   letter-spacing: 2px;
   margin-bottom: 40px;
+  text-align: center;
 }
 
 .centered_content h1 {
@@ -151,6 +152,7 @@ html {
   font-weight: 500;
   font-size: 50px;
   margin: 20px 0px 20px 0px;
+  text-align: center;
 
 }
 
@@ -160,6 +162,7 @@ html {
   font-size: 25px;
   margin-top: 20px;
   letter-spacing: 1.2px;
+  text-align: center;
 }
 
 
@@ -352,6 +355,7 @@ html {
   font-weight: 500;
   padding: 0px 20px 0px 20px;
   line-height: 30px;
+  text-align: center;
 }
 
 .card p {
@@ -361,6 +365,7 @@ html {
   font-weight: 200;
   font-size: 17px;
   padding: 0px 20px 0px 20px;
+  text-align: center;
 }
 
 
