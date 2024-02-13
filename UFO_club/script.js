@@ -75,25 +75,25 @@ const swiper = new Swiper('#gallery', {
 
 
 
-// // код для того, чтобы свайпер не начинал прокрутку, пока не виден на экране
-// function isElementInViewport(el) {
-//   const rect = el.getBoundingClientRect();
-//   return (
-//     rect.top >= 0 &&
-//     rect.left >= 0 &&
-//     rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-//     rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-//   );
-// }
+// код для того, чтобы свайпер не начинал прокрутку, пока не виден на экране
+function isElementInViewport(el) {
+  const rect = el.getBoundingClientRect();
+  return (
+    rect.top >= 0 &&
+    rect.left >= 0 &&
+    rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+    rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+  );
+}
 
-// function enableAutoplayIfSwiperInView() {
-//   if (isElementInViewport(document.querySelector('#gallery'))) {
-//     swiper.autoplay.start();
-//     window.removeEventListener('scroll', enableAutoplayIfSwiperInView);
-//   }
-// }
+function enableAutoplayIfSwiperInView() {
+  if (isElementInViewport(document.querySelector('#gallery'))) {
+    swiper.autoplay.start();
+    window.removeEventListener('scroll', enableAutoplayIfSwiperInView);
+  }
+}
 
-// window.addEventListener('scroll', enableAutoplayIfSwiperInView);
+window.addEventListener('scroll', enableAutoplayIfSwiperInView);
 
 
 
@@ -140,9 +140,9 @@ function onEntry(entry) {
   entry.forEach(change => {
     if (change.isIntersecting) {
       change.target.classList.add('element_show');
-    } //else {
-    //   change.target.classList.remove('element_show');
-    // }
+    } else {
+      change.target.classList.remove('element_show');
+    }
   });
 }
 
