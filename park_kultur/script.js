@@ -84,6 +84,9 @@ const third_swiper = new Swiper("#third_swiper", {
 
 
 const fourth_swiper = new Swiper("#fourth_swiper", {
+  loop: true,
+  freeMode: true,
+
   navigation: {
     prevEl: "#fourth_swiper_prev",
     nextEl: "#fourth_swiper_next"
