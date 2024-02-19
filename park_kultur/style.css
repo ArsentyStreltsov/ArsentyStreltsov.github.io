@@ -154,7 +154,7 @@ header{
 
 #first_page{
   position: relative;
-  background-image: url('media/other_media/Pages/Page_1_BG.png');
+  background-image: url('media/other_media/Pages/Page_1_BG.webp');
   background-position: 50% 50%;
   background-size: cover;
   height: 800px;
@@ -253,7 +253,7 @@ header{
 /* ---------- second_page --------- */
 
 #second_page {
-  background-image: url('media/other_media/Pages/Page_2_BG.png');
+  background-image: url('media/other_media/Pages/Page_2_BG.webp');
   background-position: 50% 50%;
   background-size: cover;
   position: relative;
@@ -291,7 +291,7 @@ header{
 #third_page {
   height: 800px;
   min-height: 800px;
-  background-image: url('media/other_media/Pages/Page_3_BG.png');
+  background-image: url('media/other_media/Pages/Page_3_BG.webp');
   background-position: 50% 50%;
   background-size: cover;
   position: relative;
@@ -363,7 +363,7 @@ header{
 #fourth_page {
   height: 800px;
   min-height: 800px;
-  background-image: url('media/other_media/Pages/Page_7_BG.png');
+  background-image: url('media/other_media/Pages/Page_7_BG.webp');
   background-position: 50% 50%;
   background-size: cover;
   position: relative;
@@ -578,7 +578,7 @@ p.modal_text {
   height: 800px;
   min-height: 800px;
   width: 100%;
-  background-image: url('media/other_media/Pages/Page_6_BG.png');
+  background-image: url('media/other_media/Pages/Page_6_BG.webp');
   background-position: 50% 50%;
   background-size: cover;
   position: relative;
@@ -667,7 +667,7 @@ p.modal_text {
 #sixth_page {
   height: 800px;
   min-height: 800px;
-  background-image: url('media/other_media/Pages/Page_8_BG.png');
+  background-image: url('media/other_media/Pages/Page_8_BG.webp');
   background-position: 50% 50%;
   background-size: cover;
   position: relative;
@@ -722,7 +722,7 @@ p.modal_text {
   flex-direction: column;
   align-items: center;
   justify-content: end;
-  background-image: url('media/other_media/Pages/Page_9_BG.png');
+  background-image: url('media/other_media/Pages/Page_9_BG.webp');
   background-position: 50% 50%;
   background-size: cover;
   position: relative;
