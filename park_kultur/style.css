@@ -69,7 +69,6 @@ header{
 .logo{
   left: 3.125em;
   padding-left: 1em;
-
 }
 
 .logo img {
@@ -274,11 +273,11 @@ header{
 }
 
 .second_page_overlay h3 {
+  width: 55%;
   text-align: center;
   color: white;
   font-family: 'Hero-light';
-  font-size: 2em;
-  line-height: 1.2;
+  font-size: 1.5em;
   padding: 1.25px;
 }
 
@@ -361,8 +360,8 @@ header{
 /* ---------- fourth_page --------- */
 
 #fourth_page {
-  height: 800px;
-  min-height: 800px;
+  height: 950px;
+  min-height: 950px;
   background-image: url('media/other_media/Pages/Page_7_BG.webp');
   background-position: 50% 50%;
   background-size: cover;
@@ -389,8 +388,8 @@ header{
 }
 
 #call-form {
-  font-family: "Hero-regular";
-  font-size: 2em;
+  /* font-family: "Hero-regular";
+  font-size: 2em; */
   width: 350px;
   height: 450px;
 }
@@ -402,7 +401,7 @@ header{
   cursor: pointer;
 }
 
-.btn {
+/* .btn {
   border-radius: 3px;
   padding: 16px;
   font-family: inherit;
@@ -410,13 +409,13 @@ header{
   font-size: 18px;
   color: #000;
   background-color: white;
-}
+} */
 
 .modal_gallery_all {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 50%;
+  width: 80%;
 }
 
 .modal_gallery {
@@ -437,6 +436,7 @@ header{
 
 .modal_card_image {
   border-radius: 5px;
+  max-height: 600px !important;
 }
 
 .modal_gallery_nav {
@@ -475,6 +475,8 @@ header{
   justify-content: center;
   align-items: center;
   padding-top: 60px;
+  height: 100%;
+  padding-top: 0px;
 }
 
 .modal-parent--open {
@@ -485,24 +487,27 @@ header{
 .modal {
   margin: 30px 0;
   width: 100%;
-  height: 100%;
+  height: 85%;
   border-radius: 5px;
   padding: 40px 20px;
   background-color: #fff;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
+  align-items: center;
+  overflow: scroll;
 }
 
 .modal_info {
-  width: 47%;
+  width: 80%;
   margin-left: 10px;
+  margin-bottom: 50px;
 }
 
 .modal_title {
   margin: 0;
   margin-bottom: 30px;
-  text-align: center;
+  text-align: start;
   font-family: "Hero-regular";
 }
 
@@ -514,6 +519,7 @@ h2.modal_title {
   font-family: "Hero-regular";
   width: 100%;
   margin-bottom: 20px;
+  text-align: start;
 }
 
 p.modal_text {
@@ -530,8 +536,8 @@ p.modal_text {
 }
 
 #call-form-2 {
-  font-family: "Hero-regular";
-  font-size: 2em;
+  /* font-family: "Hero-regular";
+  font-size: 2em; */
   width: 350px;
   height: 450px;  
 }
@@ -543,7 +549,7 @@ p.modal_text {
   cursor: pointer;
 }
 
-.btn_2 {
+/* .btn_2 {
   border-radius: 3px;
   padding: 16px;
   font-family: inherit;
@@ -551,11 +557,11 @@ p.modal_text {
   font-size: 18px;
   color: #000;
   background-color: white;
-}
+} */
 
 .modal-wrapper {
   width: 80%;
-  height: 75%;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -745,7 +751,7 @@ p.modal_text {
 }
 
 .seventh_page_overlay {
-    background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 .contacts {
@@ -790,7 +796,7 @@ p.modal_text {
   text-align: start;
 }
 
-.contact_name{
+.contact_name {
   font-size: 1.5em;
   text-align: start;
 }

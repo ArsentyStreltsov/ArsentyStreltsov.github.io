@@ -31,6 +31,7 @@ navLinks.forEach(function (link) {
 });
 
 
+
 // galleries
 
 const first_swiper = new Swiper("#first_swiper", {
@@ -59,6 +60,8 @@ const first_swiper = new Swiper("#first_swiper", {
 const second_swiper = new Swiper("#second_swiper", {
   loop: true,
   freeMode: true,
+  autoHeight: true,
+
 
   slidesPerView: 1,
 
@@ -72,6 +75,7 @@ const second_swiper = new Swiper("#second_swiper", {
 const third_swiper = new Swiper("#third_swiper", {
   loop: true,
   freeMode: true,
+  autoHeight: true,
 
   slidesPerView: 1,
 
@@ -80,6 +84,7 @@ const third_swiper = new Swiper("#third_swiper", {
     prevEl: "#third_swiper_prev",
     nextEl: "#third_swiper_next"
   }
+
 });
 
 
@@ -109,18 +114,16 @@ const fourth_swiper = new Swiper("#fourth_swiper", {
 
 // Modal windows #1
 
-let scrollPosition = 0; // Переменная для хранения позиции прокрутки
+let scrollPosition = 0;
 
-// Функция для блокировки прокрутки фона
 function lockScroll() {
-  scrollPosition = document.documentElement.scrollTop || document.body.scrollTop; // Сохраняем текущую позицию прокрутки
+  scrollPosition = document.documentElement.scrollTop || document.body.scrollTop;
   document.body.style.overflow = 'hidden';
   document.body.style.position = 'fixed';
-  document.body.style.top = `-${scrollPosition}px`; // Смещаем body, чтобы избежать видимого прыжка
+  document.body.style.top = `-${scrollPosition}px`;
   document.body.style.width = '100%';
 }
 
-// Функция для разблокировки прокрутки фона
 function unlockScroll() {
   document.body.style.overflow = '';
   document.body.style.position = '';
@@ -132,13 +135,11 @@ function unlockScroll() {
 const callFromBtn = document.getElementById("call-form")
 const modalCallForm = document.getElementById("modal-call-form")
 
-// Открытие модального окна
 callFromBtn.addEventListener("click", function () {
   modalCallForm.classList.add("modal-parent--open");
   lockScroll();
 })
 
-// Закрытие модального окна
 modalCallForm.querySelector(".modal").addEventListener("click", function (event) {
   event._isClick = true
 })
@@ -148,7 +149,6 @@ modalCallForm.addEventListener("click", function (event) {
   unlockScroll();
 })
 
-// Закрытие при нажатии на Esc
 window.addEventListener("keydown", function (event) {
   if (event.key === "Escape") {
     modalCallForm.classList.remove("modal-parent--open")
@@ -156,18 +156,17 @@ window.addEventListener("keydown", function (event) {
 })
 
 
+
 // Modal windows #2
 
 const callFromBtn2 = document.getElementById("call-form-2")
 const modalCallForm2 = document.getElementById("modal-call-form-2")
 
-// Открытие модального окна
 callFromBtn2.addEventListener("click", function () {
   modalCallForm2.classList.add("modal-parent--open");
   lockScroll();
 })
 
-// Закрытие модального окна
 modalCallForm2.querySelector(".modal").addEventListener("click", function (event) {
   event._isClick = true
 })
@@ -177,38 +176,32 @@ modalCallForm2.addEventListener("click", function (event) {
   unlockScroll();
 })
 
-// Закрытие при нажатии на Esc
 window.addEventListener("keydown", function (event) {
   if (event.key === "Escape") {
     modalCallForm2.classList.remove("modal-parent--open")
   }
 })
 
-
-
 document.addEventListener('DOMContentLoaded', function() {
     const originalParent = document.querySelector('.contact_info_1');
     const mediaLinks1 = document.getElementById('media_links_1');
     const targetContainer = document.querySelector('.media_links_2');
-    let hasMoved = false; // Флаг, отслеживающий перемещение
+    let hasMoved = false; 
 
     function checkWindowSize() {
-        // Если ширина окна находится в диапазоне и элемент ещё не перемещён
         if (window.innerWidth >= 1 && window.innerWidth <= 767 && !hasMoved) {
             if (mediaLinks1 && targetContainer) {
                 targetContainer.appendChild(mediaLinks1);
-                hasMoved = true; // Устанавливаем флаг в true после перемещения
+                hasMoved = true;
             }
-        // Если ширина окна выходит из диапазона и элемент был перемещён
         } else if ((window.innerWidth < 1 || window.innerWidth > 767) && hasMoved) {
             if (mediaLinks1 && originalParent) {
                 originalParent.appendChild(mediaLinks1);
-                hasMoved = false; // Сбрасываем флаг после возвращения
+                hasMoved = false;
             }
         }
     }
 
-    // Вызываем функцию при загрузке страницы и при изменении размера окна
     window.addEventListener('resize', checkWindowSize);
     checkWindowSize();
 });
