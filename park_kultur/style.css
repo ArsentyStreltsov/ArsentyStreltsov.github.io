@@ -436,7 +436,7 @@ header{
 
 .modal_card_image {
   border-radius: 5px;
-  max-height: 600px !important;
+  max-height: 40em !important;
 }
 
 .modal_gallery_nav {

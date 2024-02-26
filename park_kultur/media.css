@@ -166,6 +166,10 @@
     height: 90%;
   }
 
+  .modal_card_image {
+    max-height: 176px !important;
+  }
+
   .buy_ticket {
     font-size: 13px;
   }
@@ -462,10 +466,18 @@
     font-size: 28px;
   }
 
+  .modal_gallery {
+    height: 250px !important;
+  }
+
   .modal_gallery_all {
     margin-top: 30px;
     width: 90%;
-    height: 90%;
+    height: 500px !important;
+  }
+
+  .modal_card_image {
+    max-height: 250px !important;
   }
 
   .buy_ticket {
@@ -707,7 +719,7 @@
 
   .modal_card_image {
     width: 650px;
-    max-height: 400px !important;
+    max-height: 337px !important;
   }
 
   .modal_title {
@@ -839,7 +851,7 @@
 
   .modal_card_image{
     width: 650px;
-    max-height: 500px !important;
+    max-height: 414px !important;
   }
 
   .modal_gallery_nav{
