@@ -701,6 +701,15 @@
     height: 500px;
   }
 
+  .swiper {
+    align-items: center;
+  }
+
+  .modal_card_image {
+    width: 650px;
+    max-height: 400px !important;
+  }
+
   .modal_title {
     padding-top: 40px;
   }
@@ -823,9 +832,14 @@
     height: 500px;
   }
 
+
+  .swiper{
+    align-items: center;
+  }
+
   .modal_card_image{
     width: 650px;
-    height: 500px;
+    max-height: 500px !important;
   }
 
   .modal_gallery_nav{
