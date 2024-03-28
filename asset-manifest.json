@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/f-pressers-game/static/css/main.f855e6bc.css",
+    "main.js": "/f-pressers-game/static/js/main.70b20b17.js",
+    "static/js/453.cf82a2a4.chunk.js": "/f-pressers-game/static/js/453.cf82a2a4.chunk.js",
+    "index.html": "/f-pressers-game/index.html",
+    "main.f855e6bc.css.map": "/f-pressers-game/static/css/main.f855e6bc.css.map",
+    "main.70b20b17.js.map": "/f-pressers-game/static/js/main.70b20b17.js.map",
+    "453.cf82a2a4.chunk.js.map": "/f-pressers-game/static/js/453.cf82a2a4.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f855e6bc.css",
+    "static/js/main.70b20b17.js"
+  ]
+}
