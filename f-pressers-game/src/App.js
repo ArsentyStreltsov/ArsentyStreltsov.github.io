@@ -4,12 +4,12 @@ import { Unity, useUnityContext } from "react-unity-webgl";
 function App() {
 
   const { unityProvider } = useUnityContext({
-    loaderUrl: "build/build_fpressers_24/Build/build_fpressers_24.loader.js",
-    dataUrl: "build/build_fpressers_24/Build/759ab52b311786e4dd1951c2624f5da2.data",
-    frameworkUrl: "build/build_fpressers_24/Build/cd04464fa8c418de2dc4c84d497c85f4.js",
-    codeUrl: "build/build_fpressers_24/Build/159acb88f36fc8af537d77942ce9a53c.wasm",
-
+    loaderUrl: "f-pressers-game/build_fpressers_24/Build/build_fpressers_24.loader.js",
+    dataUrl: "f-pressers-game/build_fpressers_24/Build/759ab52b311786e4dd1951c2624f5da2.data",
+    frameworkUrl: "f-pressers-game/build_fpressers_24/Build/cd04464fa8c418de2dc4c84d497c85f4.js",
+    codeUrl: "f-pressers-game/build_fpressers_24/Build/159acb88f36fc8af537d77942ce9a53c.wasm",
   });
+
 
   return (
     <div className="App">
